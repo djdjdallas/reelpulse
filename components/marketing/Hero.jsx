@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BarChart3, ArrowRight } from "lucide-react";
+import { Star } from "lucide-react";
+import { SeriesRetentionCard } from "@/components/marketing/SeriesRetentionCard";
 
 export function Hero() {
   return (
@@ -10,40 +11,74 @@ export function Hero() {
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[800px] rounded-full bg-primary/10 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-4xl text-center">
-        <div className="flex justify-center mb-6">
-          <div className="flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm text-primary">
-            <BarChart3 className="h-4 w-4" />
-            Analytics for Micro-Drama Creators
+      <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        {/* Left Column — Copy */}
+        <div>
+          {/* Badge */}
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            <span className="h-2 w-2 rounded-full bg-green-500" />
+            For Micro-Drama Creators
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Stop Guessing.
+            <br />
+            <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+              Start Optimizing.
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="mt-6 max-w-lg text-lg text-muted-foreground">
+            The first analytics platform built for the $11B micro-drama industry.
+            Visualize retention, score hooks, and optimize paywall placement to
+            maximize revenue.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button asChild size="lg" className="text-base px-8">
+              <Link href="/login">Start Free — No Credit Card</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="text-base px-8">
+              <Link href="#features">View Demo</Link>
+            </Button>
+          </div>
+
+          {/* Social Proof */}
+          <div className="mt-8 flex items-center gap-3">
+            {/* Overlapping avatar circles */}
+            <div className="flex -space-x-2">
+              {["bg-blue-500", "bg-emerald-500", "bg-amber-500", "bg-rose-500"].map(
+                (color, i) => (
+                  <div
+                    key={i}
+                    className={`h-8 w-8 rounded-full ${color} ring-2 ring-background`}
+                  />
+                )
+              )}
+            </div>
+
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400"
+                />
+              ))}
+            </div>
+
+            <span className="text-sm text-muted-foreground">
+              Trusted by 500+ indie creators
+            </span>
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-          Stop Guessing.{" "}
-          <span className="text-primary">Start Optimizing.</span>
-        </h1>
-
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          Know exactly where viewers drop off, which hooks grab attention, and
-          where to place your paywall for maximum revenue. Built for ReelShort,
-          DramaBox, and every micro-drama platform.
-        </p>
-
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <Button asChild size="lg" className="text-base px-8">
-            <Link href="/login">
-              Get Started Free
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-base px-8">
-            <Link href="#pricing">View Pricing</Link>
-          </Button>
+        {/* Right Column — Interactive Card */}
+        <div className="pt-6">
+          <SeriesRetentionCard />
         </div>
-
-        <p className="mt-4 text-xs text-muted-foreground">
-          No credit card required. Free plan includes 1 series.
-        </p>
       </div>
     </section>
   );
