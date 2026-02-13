@@ -50,14 +50,19 @@ export function Hero() {
           <div className="mt-8 flex items-center gap-3">
             {/* Overlapping avatar circles */}
             <div className="flex -space-x-2">
-              {["bg-blue-500", "bg-emerald-500", "bg-amber-500", "bg-rose-500"].map(
-                (color, i) => (
-                  <div
-                    key={i}
-                    className={`h-8 w-8 rounded-full ${color} ring-2 ring-background`}
-                  />
-                )
-              )}
+              {[
+                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=64&h=64&fit=crop&crop=face",
+                "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=64&h=64&fit=crop&crop=face",
+              ].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt=""
+                  className="h-8 w-8 rounded-full object-cover ring-2 ring-background"
+                />
+              ))}
             </div>
 
             <div className="flex items-center gap-1">
@@ -70,7 +75,7 @@ export function Hero() {
             </div>
 
             <span className="text-sm text-muted-foreground">
-              Trusted by 500+ indie creators
+              Trusted by 200+ indie creators
             </span>
           </div>
         </div>
