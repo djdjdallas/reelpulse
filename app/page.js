@@ -7,9 +7,29 @@ import { BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ReelPulse",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "Analytics and paywall optimization for short-form series creators on ReelShort, DramaBox, ShortTV, and more.",
+  url: "https://reelpulse.com",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+};
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Navbar */}
       <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
@@ -18,6 +38,12 @@ export default function HomePage() {
             ReelPulse
           </Link>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
+            <Link
+              href="/blog"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
             <Link
               href="#features"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -64,10 +90,21 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="border-t border-border/50 py-8">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 text-sm text-muted-foreground">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-sm text-muted-foreground sm:flex-row sm:justify-between">
           <div className="flex items-center gap-2">
             <BarChart3 className="h-4 w-4 text-primary" />
             ReelPulse
+          </div>
+          <div className="flex items-center gap-4">
+            <Link href="/blog" className="hover:text-foreground transition-colors">
+              Blog
+            </Link>
+            <Link href="/terms" className="hover:text-foreground transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="/privacy" className="hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link>
           </div>
           <p>&copy; {new Date().getFullYear()} ReelPulse. All rights reserved.</p>
         </div>
