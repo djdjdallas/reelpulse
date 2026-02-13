@@ -27,7 +27,7 @@ export default async function DashboardLayout({ children }) {
     <TooltipProvider>
       <div className="flex min-h-screen">
         <Sidebar user={user} />
-        <main className="ml-60 flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto pt-14 md:ml-60 md:pt-0">
           <div className="mx-auto max-w-7xl p-6">{children}</div>
         </main>
       </div>

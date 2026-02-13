@@ -72,15 +72,7 @@ export function Pricing({ currentPlan, mode = "marketing" }) {
       const res = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          priceId:
-            planKey === "pro"
-              ? process.env.NEXT_PUBLIC_STRIPE_PRO_PRICE_ID ||
-                "price_pro_placeholder"
-              : process.env.NEXT_PUBLIC_STRIPE_STUDIO_PRICE_ID ||
-                "price_studio_placeholder",
-          plan: planKey,
-        }),
+        body: JSON.stringify({ plan: planKey }),
       });
       const data = await res.json();
       if (data.url) {

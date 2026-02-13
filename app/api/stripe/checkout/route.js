@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getStripeServer } from "@/lib/stripe";
+import { getStripeServer, PLANS } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
 
 export async function POST(request) {
@@ -13,11 +13,19 @@ export async function POST(request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const { priceId, plan } = await request.json();
+    const { plan } = await request.json();
 
-    if (!priceId || !plan) {
+    if (!plan || !PLANS[plan]) {
       return NextResponse.json(
-        { error: "Missing priceId or plan" },
+        { error: "Invalid plan" },
+        { status: 400 }
+      );
+    }
+
+    const priceId = PLANS[plan].priceId;
+    if (!priceId) {
+      return NextResponse.json(
+        { error: "No price configured for this plan" },
         { status: 400 }
       );
     }
