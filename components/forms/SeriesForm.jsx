@@ -18,7 +18,7 @@ import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { GENRES, PLATFORMS } from "@/lib/utils/constants";
 
-export function SeriesForm({ workspaceId, initialData }) {
+export function SeriesForm({ workspaceId, initialData, canCreate = true }) {
   const router = useRouter();
   const isEditing = !!initialData;
 
@@ -39,6 +39,10 @@ export function SeriesForm({ workspaceId, initialData }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (!canCreate && !isEditing) {
+      toast.error("You've reached your plan's series limit");
+      return;
+    }
     if (!form.title.trim()) {
       toast.error("Title is required");
       return;

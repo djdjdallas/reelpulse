@@ -5,9 +5,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MetricsDashboard } from "./MetricsDashboard";
 import { MetricsForm } from "@/components/forms/MetricsForm";
 import { CSVUpload } from "@/components/forms/CSVUpload";
+import { UpgradeBanner } from "@/components/dashboard/UpgradeBanner";
 import { useRouter } from "next/navigation";
 
-export function MetricsPageClient({ series, episodes, initialMetrics }) {
+export function MetricsPageClient({ series, episodes, initialMetrics, hasCSVUpload = false }) {
   const [metrics, setMetrics] = useState(initialMetrics);
   const router = useRouter();
 
@@ -54,7 +55,11 @@ export function MetricsPageClient({ series, episodes, initialMetrics }) {
       </TabsContent>
 
       <TabsContent value="csv" className="mt-4 space-y-4">
-        <CSVUpload episodes={episodes} onImported={handleCSVImported} />
+        {hasCSVUpload ? (
+          <CSVUpload episodes={episodes} onImported={handleCSVImported} />
+        ) : (
+          <UpgradeBanner message="CSV upload is available on Pro and Studio plans. Upgrade to bulk-import your metrics." />
+        )}
       </TabsContent>
     </Tabs>
   );

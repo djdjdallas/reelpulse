@@ -1,6 +1,7 @@
 import { redirect, notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { MetricsPageClient } from "@/components/dashboard/MetricsPageClient";
+import { hasFeature } from "@/lib/utils/featureGating";
 
 export const metadata = {
   title: "Metrics — ReelPulse",
@@ -17,11 +18,14 @@ export default async function MetricsPage({ params }) {
 
   const { data: series } = await supabase
     .from("series")
-    .select("*")
+    .select("*, workspaces(plan)")
     .eq("id", seriesId)
     .single();
 
   if (!series) notFound();
+
+  const plan = series.workspaces?.plan ?? "free";
+  const hasCSVUpload = hasFeature(plan, "hasCSVUpload");
 
   // Fetch episodes
   const { data: episodes } = await supabase
@@ -56,6 +60,7 @@ export default async function MetricsPage({ params }) {
         series={series}
         episodes={episodes ?? []}
         initialMetrics={metrics}
+        hasCSVUpload={hasCSVUpload}
       />
     </div>
   );

@@ -23,9 +23,12 @@ import { EpisodeForm } from "./EpisodeForm";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { Plus, Pencil, Trash2, Copy } from "lucide-react";
+import { UpgradeBanner } from "@/components/dashboard/UpgradeBanner";
 
-export function EpisodeManager({ seriesId, initialEpisodes }) {
+export function EpisodeManager({ seriesId, initialEpisodes, maxEpisodes = Infinity }) {
   const [episodes, setEpisodes] = useState(initialEpisodes);
+  const remaining = maxEpisodes - episodes.length;
+  const atLimit = remaining <= 0;
   const [formOpen, setFormOpen] = useState(false);
   const [editingEpisode, setEditingEpisode] = useState(null);
   const [bulkOpen, setBulkOpen] = useState(false);
@@ -71,9 +74,10 @@ export function EpisodeManager({ seriesId, initialEpisodes }) {
 
   async function handleBulkAdd(e) {
     e.preventDefault();
+    const maxBulk = maxEpisodes === Infinity ? 100 : Math.min(100, remaining);
     const count = Number(bulkCount);
-    if (!count || count < 1 || count > 100) {
-      toast.error("Enter a number between 1 and 100");
+    if (!count || count < 1 || count > maxBulk) {
+      toast.error(`Enter a number between 1 and ${maxBulk}`);
       return;
     }
 
@@ -127,16 +131,22 @@ export function EpisodeManager({ seriesId, initialEpisodes }) {
           Episodes ({episodes.length})
         </h2>
         <div className="flex gap-2">
-          <Button variant="outline" size="sm" onClick={() => setBulkOpen(true)}>
+          <Button variant="outline" size="sm" onClick={() => setBulkOpen(true)} disabled={atLimit}>
             <Copy className="mr-2 h-4 w-4" />
             Bulk Add
           </Button>
-          <Button size="sm" onClick={openNew}>
+          <Button size="sm" onClick={openNew} disabled={atLimit}>
             <Plus className="mr-2 h-4 w-4" />
             Add Episode
           </Button>
         </div>
       </div>
+
+      {atLimit && (
+        <UpgradeBanner
+          message={`You've reached the ${maxEpisodes}-episode limit for your plan. Upgrade to add more episodes.`}
+        />
+      )}
 
       {episodes.length === 0 ? (
         <div className="rounded-lg border border-dashed p-8 text-center text-sm text-muted-foreground">
@@ -246,7 +256,7 @@ export function EpisodeManager({ seriesId, initialEpisodes }) {
                 id="bulkCount"
                 type="number"
                 min="1"
-                max="100"
+                max={maxEpisodes === Infinity ? 100 : Math.min(100, remaining)}
                 value={bulkCount}
                 onChange={(e) => setBulkCount(e.target.value)}
                 placeholder="e.g. 20"
