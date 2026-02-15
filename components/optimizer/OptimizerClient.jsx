@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
+import posthog from "posthog-js";
 import { PaywallRecommendation } from "./PaywallRecommendation";
 import { WhatIfScenario } from "./WhatIfScenario";
 import { WeakEpisodeFlags } from "./WeakEpisodeFlags";
@@ -33,6 +34,10 @@ export function OptimizerClient({ series, episodes, metrics }) {
     () => flagWeakEpisodes(enriched),
     [enriched]
   );
+
+  useEffect(() => {
+    posthog.capture("optimizer_viewed", { series_id: series.id, episode_count: episodes.length });
+  }, [series.id, episodes.length]);
 
   if (!episodes.length || !metrics.length) {
     return (

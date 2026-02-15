@@ -22,6 +22,7 @@ import {
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { GENRES, PLATFORMS } from "@/lib/utils/constants";
+import posthog from "posthog-js";
 import {
   BarChart3,
   CheckCircle2,
@@ -91,6 +92,7 @@ export function OnboardingWizard() {
     }
 
     setCreatedSeriesId(series.id);
+    posthog.capture("onboarding_step_completed", { step: 1, step_name: "create_series" });
     toast.success("Series created!");
     setStep(2);
   }
@@ -101,6 +103,7 @@ export function OnboardingWizard() {
       const res = await fetch("/api/sample-data", { method: "POST" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to load sample data");
+      posthog.capture("onboarding_step_completed", { step: 2, step_name: "add_data", data_source: "sample" });
       toast.success("Sample data loaded!");
       setStep(3);
     } catch (err) {
@@ -111,6 +114,7 @@ export function OnboardingWizard() {
   }
 
   async function handleFinish() {
+    posthog.capture("onboarding_completed");
     setLoading(true);
     const supabase = createClient();
 
@@ -186,10 +190,10 @@ export function OnboardingWizard() {
               </li>
             </ul>
             <div className="flex gap-3">
-              <Button onClick={() => setStep(1)} className="flex-1">
+              <Button onClick={() => { posthog.capture("onboarding_started"); setStep(1); }} className="flex-1">
                 Get Started
               </Button>
-              <Button variant="ghost" onClick={handleFinish} disabled={loading}>
+              <Button variant="ghost" onClick={() => { posthog.capture("onboarding_skipped", { skipped_at_step: 0 }); handleFinish(); }} disabled={loading}>
                 Skip for now
               </Button>
             </div>
@@ -262,7 +266,7 @@ export function OnboardingWizard() {
               >
                 {loading ? "Creating..." : "Create Series"}
               </Button>
-              <Button variant="outline" onClick={() => setStep(2)}>
+              <Button variant="outline" onClick={() => { posthog.capture("onboarding_step_completed", { step: 1, step_name: "create_series", skipped: true }); setStep(2); }}>
                 Skip this step
               </Button>
             </div>
@@ -295,7 +299,7 @@ export function OnboardingWizard() {
                 </div>
               </button>
               <button
-                onClick={() => setStep(3)}
+                onClick={() => { posthog.capture("onboarding_step_completed", { step: 2, step_name: "add_data", skipped: true }); setStep(3); }}
                 className="flex flex-col items-center gap-3 rounded-lg border border-border p-6 text-center transition-colors hover:bg-muted/50"
               >
                 <FileText className="h-8 w-8 text-muted-foreground" />

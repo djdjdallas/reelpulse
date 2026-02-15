@@ -20,6 +20,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { createClient } from "@/lib/supabase/client";
+import posthog from "posthog-js";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -96,6 +97,8 @@ export function Sidebar({ user }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   async function handleSignOut() {
+    posthog.capture("sign_out");
+    posthog.reset();
     const supabase = createClient();
     await supabase.auth.signOut();
     router.push("/login");

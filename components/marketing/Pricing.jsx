@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 
 const plans = [
   {
@@ -67,6 +68,7 @@ export function Pricing({ currentPlan, mode = "marketing" }) {
   async function handleUpgrade(planKey) {
     if (planKey === "free") return;
 
+    posthog.capture("checkout_started", { plan: planKey });
     setLoading(planKey);
     try {
       const res = await fetch("/api/stripe/checkout", {
@@ -88,6 +90,7 @@ export function Pricing({ currentPlan, mode = "marketing" }) {
   }
 
   async function handleManage() {
+    posthog.capture("subscription_managed");
     setLoading("manage");
     try {
       const res = await fetch("/api/stripe/portal", { method: "POST" });

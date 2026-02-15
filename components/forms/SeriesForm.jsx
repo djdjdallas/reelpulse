@@ -17,6 +17,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { GENRES, PLATFORMS } from "@/lib/utils/constants";
+import posthog from "posthog-js";
 
 export function SeriesForm({ workspaceId, initialData, canCreate = true }) {
   const router = useRouter();
@@ -86,6 +87,11 @@ export function SeriesForm({ workspaceId, initialData, canCreate = true }) {
       return;
     }
 
+    posthog.capture(isEditing ? "series_updated" : "series_created", {
+      series_id: result.data.id,
+      genre: result.data.genre,
+      platform: result.data.platform,
+    });
     toast.success(isEditing ? "Series updated!" : "Series created!");
     router.push(`/dashboard/series/${result.data.id}`);
     router.refresh();

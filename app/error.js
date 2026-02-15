@@ -4,10 +4,15 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 export default function GlobalError({ error, reset }) {
   useEffect(() => {
     console.error(error);
+    posthog.capture("error_occurred", {
+      error_message: error.message,
+      error_digest: error.digest,
+    });
   }, [error]);
 
   return (

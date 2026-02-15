@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect } from "react";
+import posthog from "posthog-js";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +13,16 @@ export function WhatIfScenario({ episodes, currentPaywall }) {
   const [position, setPosition] = useState(
     currentPaywall || Math.max(2, Math.floor(totalEps / 3))
   );
+
+  const debounceRef = useRef(null);
+  const handleSliderChange = useCallback(([v]) => {
+    setPosition(v);
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      posthog.capture("whatif_slider_used", { new_position: v, current_paywall: currentPaywall });
+    }, 500);
+  }, [currentPaywall]);
+  useEffect(() => () => clearTimeout(debounceRef.current), []);
 
   const currentEstimate = useMemo(
     () =>
@@ -63,7 +74,7 @@ export function WhatIfScenario({ episodes, currentPaywall }) {
             max={totalEps - 1}
             step={1}
             value={[position]}
-            onValueChange={([v]) => setPosition(v)}
+            onValueChange={handleSliderChange}
           />
           <div className="flex justify-between text-xs text-muted-foreground">
             <span>Ep 2</span>

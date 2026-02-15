@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { Sidebar } from "@/components/dashboard/Sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { PostHogIdentify } from "@/components/analytics/PostHogIdentify";
 
 export default async function DashboardLayout({ children }) {
   const supabase = await createClient();
@@ -25,6 +26,12 @@ export default async function DashboardLayout({ children }) {
 
   return (
     <TooltipProvider>
+      <PostHogIdentify
+        userId={user.id}
+        email={user.email}
+        name={user.user_metadata?.full_name}
+        plan={workspace?.plan}
+      />
       <div className="flex min-h-screen">
         <Sidebar user={user} />
         <main className="flex-1 overflow-y-auto pt-14 md:ml-60 md:pt-0">

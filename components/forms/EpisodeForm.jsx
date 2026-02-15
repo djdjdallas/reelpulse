@@ -21,6 +21,7 @@ import {
 import { TropeTagSelect } from "./TropeTagSelect";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 
 export function EpisodeForm({ seriesId, episode, open, onOpenChange, onSaved }) {
   const isEditing = !!episode;
@@ -90,6 +91,10 @@ export function EpisodeForm({ seriesId, episode, open, onOpenChange, onSaved }) 
       return;
     }
 
+    posthog.capture(isEditing ? "episode_updated" : "episode_added", {
+      series_id: seriesId,
+      episode_number: result.data.episode_number,
+    });
     toast.success(isEditing ? "Episode updated!" : "Episode added!");
     onSaved(result.data);
     onOpenChange(false);

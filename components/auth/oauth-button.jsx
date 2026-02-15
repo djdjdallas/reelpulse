@@ -3,9 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 
 export function OAuthButton() {
   async function handleGoogleLogin() {
+    posthog.capture("sign_in", { method: "google_oauth" });
     const supabase = createClient();
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",

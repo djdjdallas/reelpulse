@@ -23,6 +23,7 @@ import { EpisodeForm } from "./EpisodeForm";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { Plus, Pencil, Trash2, Copy } from "lucide-react";
+import posthog from "posthog-js";
 import { UpgradeBanner } from "@/components/dashboard/UpgradeBanner";
 
 export function EpisodeManager({ seriesId, initialEpisodes, maxEpisodes = Infinity }) {
@@ -69,6 +70,7 @@ export function EpisodeManager({ seriesId, initialEpisodes, maxEpisodes = Infini
       return;
     }
     setEpisodes((prev) => prev.filter((e) => e.id !== ep.id));
+    posthog.capture("episode_deleted", { series_id: seriesId, episode_number: ep.episode_number });
     toast.success(`Episode ${ep.episode_number} deleted`);
   }
 
@@ -114,6 +116,7 @@ export function EpisodeManager({ seriesId, initialEpisodes, maxEpisodes = Infini
     setEpisodes((prev) =>
       [...prev, ...data].sort((a, b) => a.episode_number - b.episode_number)
     );
+    posthog.capture("episodes_bulk_added", { series_id: seriesId, count });
     toast.success(`Added ${count} episodes`);
     setBulkOpen(false);
     setBulkCount("");

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
+import posthog from "posthog-js";
 
 export function LoginForm() {
   const [email, setEmail] = useState("");
@@ -34,6 +35,7 @@ export function LoginForm() {
     }
 
     setSent(true);
+    posthog.capture("sign_in", { method: "magic_link" });
     toast.success("Check your email for the magic link!");
   }
 

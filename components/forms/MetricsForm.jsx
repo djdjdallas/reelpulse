@@ -21,6 +21,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { format } from "date-fns";
+import posthog from "posthog-js";
 import { CalendarIcon } from "lucide-react";
 
 export function MetricsForm({ episodes, onSaved }) {
@@ -89,6 +90,7 @@ export function MetricsForm({ episodes, onSaved }) {
       return;
     }
 
+    posthog.capture("metrics_saved", { episode_id: form.episode_id });
     toast.success("Metrics saved!");
     onSaved?.(data);
 

@@ -16,6 +16,7 @@ import { parseMetricsCSV } from "@/lib/utils/csvParser";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
 import { Upload, FileText, AlertCircle, CheckCircle2 } from "lucide-react";
+import posthog from "posthog-js";
 
 export function CSVUpload({ episodes, onImported }) {
   const [dragOver, setDragOver] = useState(false);
@@ -32,6 +33,7 @@ export function CSVUpload({ episodes, onImported }) {
 
     const result = await parseMetricsCSV(file, episodes);
     setParsed(result);
+    posthog.capture("csv_uploaded", { row_count: result.rows.length, error_count: result.errors.length });
 
     if (result.errors.length > 0) {
       toast.error(`${result.errors.length} validation error(s) found`);
@@ -73,6 +75,7 @@ export function CSVUpload({ episodes, onImported }) {
       return;
     }
 
+    posthog.capture("csv_import_completed", { rows_imported: data.length });
     toast.success(`Imported ${data.length} metric rows`);
     setParsed(null);
     onImported?.(data);
