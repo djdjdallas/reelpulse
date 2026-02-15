@@ -10,7 +10,7 @@ import { OAuthButton } from "@/components/auth/oauth-button";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
-  title: "Sign In — ReelPulse",
+  title: "Sign In",
 };
 
 export default function LoginPage() {

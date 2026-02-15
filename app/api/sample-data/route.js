@@ -5,6 +5,7 @@ import {
   SAMPLE_EPISODES,
   SAMPLE_METRICS,
 } from "@/data/sample-billionaires-secret";
+import { sampleDataLimiter, rateLimitHeaders } from "@/lib/utils/rateLimit";
 
 export async function POST() {
   try {
@@ -18,6 +19,14 @@ export async function POST() {
 
     if (authError || !user) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const rateLimit = sampleDataLimiter.check(user.id);
+    if (!rateLimit.success) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429, headers: rateLimitHeaders(3, 0, rateLimit.resetAt) }
+      );
     }
 
     // Get user's workspace
@@ -101,12 +110,15 @@ export async function POST() {
       );
     }
 
-    return NextResponse.json({
-      success: true,
-      seriesId: series.id,
-      episodesCreated: episodes.length,
-      metricsCreated: metricInserts.length,
-    });
+    return NextResponse.json(
+      {
+        success: true,
+        seriesId: series.id,
+        episodesCreated: episodes.length,
+        metricsCreated: metricInserts.length,
+      },
+      { headers: rateLimitHeaders(3, rateLimit.remaining, rateLimit.resetAt) }
+    );
   } catch (err) {
     return NextResponse.json(
       { error: err.message || "Internal server error" },

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getStripeServer, PLANS } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
+import { checkoutLimiter, rateLimitHeaders } from "@/lib/utils/rateLimit";
 
 export async function POST(request) {
   try {
@@ -11,6 +12,14 @@ export async function POST(request) {
 
     if (!user) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const rateLimit = checkoutLimiter.check(user.id);
+    if (!rateLimit.success) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429, headers: rateLimitHeaders(5, 0, rateLimit.resetAt) }
+      );
     }
 
     const { plan } = await request.json();
@@ -70,7 +79,10 @@ export async function POST(request) {
       },
     });
 
-    return NextResponse.json({ url: session.url });
+    return NextResponse.json(
+      { url: session.url },
+      { headers: rateLimitHeaders(5, rateLimit.remaining, rateLimit.resetAt) }
+    );
   } catch (err) {
     console.error("Checkout error:", err);
     return NextResponse.json(

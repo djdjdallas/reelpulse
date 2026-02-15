@@ -12,7 +12,8 @@ export async function generateMetadata({ params }) {
     .single();
 
   return {
-    title: series ? `${series.title} — ReelPulse` : "Series — ReelPulse",
+    title: series ? series.title : "Series",
+    robots: { index: false, follow: false },
   };
 }
 
