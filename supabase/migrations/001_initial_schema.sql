@@ -1,5 +1,5 @@
 -- ============================================================
--- ReelPulse Initial Schema
+-- Reelytics Initial Schema
 -- ============================================================
 
 -- Enable required extensions

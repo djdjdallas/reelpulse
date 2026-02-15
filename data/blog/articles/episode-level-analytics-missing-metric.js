@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-11",
   updatedAt: "2026-01-11",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "advanced-analytics",
@@ -25,7 +25,7 @@ export const article = {
       "episode tracking",
       "series performance",
       "episode dashboards",
-      "ReelPulse",
+      "Reelytics",
       "episode drop-off",
       "cliffhanger optimization",
     ],
@@ -166,12 +166,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "The most practical option for most creators is a purpose-built analytics platform that understands serialized content. This is exactly the problem ReelPulse was designed to solve. Rather than treating each video as an isolated post, ReelPulse groups episodes into series and provides per-episode metrics out of the box — no spreadsheets, no API wrangling, no custom dashboards to maintain.",
+        "The most practical option for most creators is a purpose-built analytics platform that understands serialized content. This is exactly the problem Reelytics was designed to solve. Rather than treating each video as an isolated post, Reelytics groups episodes into series and provides per-episode metrics out of the box — no spreadsheets, no API wrangling, no custom dashboards to maintain.",
     },
     {
       type: "cta",
       heading: "See Every Episode's Performance at a Glance",
-      text: "ReelPulse gives you episode-level dashboards with retention, revenue, and engagement metrics for every episode across every platform. Stop guessing which episodes are pulling their weight.",
+      text: "Reelytics gives you episode-level dashboards with retention, revenue, and engagement metrics for every episode across every platform. Stop guessing which episodes are pulling their weight.",
       buttonText: "Start Tracking Episodes",
       buttonHref: "/login",
     },
@@ -246,13 +246,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Handles Episode Analytics",
-      id: "reelpulse-episode-analytics",
+      text: "How Reelytics Handles Episode Analytics",
+      id: "reelytics-episode-analytics",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse was built from the ground up with the episode as the primary unit of analysis. When you connect your series, every episode is automatically tracked with its own set of metrics: views, completion rate, average watch time, transition rate to the next episode, revenue (for paywalled episodes), and engagement signals like likes, comments, and shares.",
+        "Reelytics was built from the ground up with the episode as the primary unit of analysis. When you connect your series, every episode is automatically tracked with its own set of metrics: views, completion rate, average watch time, transition rate to the next episode, revenue (for paywalled episodes), and engagement signals like likes, comments, and shares.",
     },
     {
       type: "paragraph",
@@ -272,7 +272,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Because ReelPulse aggregates data across platforms, you get a unified episode-level view even if you publish the same series on TikTok, YouTube Shorts, and ReelShort. This cross-platform episode analysis is something you simply cannot get from any single platform's native dashboard.",
+        "Because Reelytics aggregates data across platforms, you get a unified episode-level view even if you publish the same series on TikTok, YouTube Shorts, and ReelShort. This cross-platform episode analysis is something you simply cannot get from any single platform's native dashboard.",
     },
     {
       type: "heading",
@@ -299,12 +299,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Once you see the value of this data, you will want to automate the process and expand to more series and more metrics. That is where a dedicated tool like ReelPulse becomes indispensable — it does all of this automatically, across all your series and all your platforms, updated in real time.",
+        "Once you see the value of this data, you will want to automate the process and expand to more series and more metrics. That is where a dedicated tool like Reelytics becomes indispensable — it does all of this automatically, across all your series and all your platforms, updated in real time.",
     },
     {
       type: "cta",
       heading: "Stop Flying Blind on Episode Performance",
-      text: "ReelPulse gives you the episode-level analytics that platforms don't. See exactly which episodes drive your series forward and which ones hold it back.",
+      text: "Reelytics gives you the episode-level analytics that platforms don't. See exactly which episodes drive your series forward and which ones hold it back.",
       buttonText: "Get Episode-Level Insights",
       buttonHref: "/login",
     },

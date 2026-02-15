@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-05",
   updatedAt: "2026-01-05",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "fundamentals",
@@ -32,7 +32,7 @@ export const article = {
       "retention tracking",
       "cohort analysis",
       "analytics best practices",
-      "ReelPulse",
+      "Reelytics",
       "series analytics",
     ],
   },
@@ -181,7 +181,7 @@ export const article = {
     {
       type: "cta",
       heading: "Get Paywall Analytics That Actually Help",
-      text: "ReelPulse tracks paywall conversion rates, drop-off patterns, and revenue by episode automatically. See exactly how your paywall is performing and where to improve.",
+      text: "Reelytics tracks paywall conversion rates, drop-off patterns, and revenue by episode automatically. See exactly how your paywall is performing and where to improve.",
       buttonText: "Optimize Your Paywall",
       buttonHref: "/login",
     },
@@ -237,7 +237,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "A dedicated analytics tool like ReelPulse is built specifically for serialized content. It understands that your videos are episodes in a series, not standalone clips. It tracks the metrics that matter for series creators — binge rate, episode-to-episode retention, paywall conversion, revenue per episode — and presents them in a way that enables fast, confident decisions.",
+        "A dedicated analytics tool like Reelytics is built specifically for serialized content. It understands that your videos are episodes in a series, not standalone clips. It tracks the metrics that matter for series creators — binge rate, episode-to-episode retention, paywall conversion, revenue per episode — and presents them in a way that enables fast, confident decisions.",
     },
     {
       type: "paragraph",
@@ -301,7 +301,7 @@ export const article = {
     {
       type: "cta",
       heading: "Fix Your Analytics Blind Spots",
-      text: "ReelPulse gives you episode-level tracking, cohort analysis, paywall analytics, and series-specific benchmarks in one dashboard. Stop making the mistakes that cost you viewers and revenue.",
+      text: "Reelytics gives you episode-level tracking, cohort analysis, paywall analytics, and series-specific benchmarks in one dashboard. Stop making the mistakes that cost you viewers and revenue.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },
@@ -325,7 +325,7 @@ export const article = {
       type: "blockquote",
       content:
         "The difference between a creator who grows and a creator who plateaus is not talent or budget — it is the quality of the decisions they make. And the quality of decisions is directly proportional to the quality of the data informing them.",
-      attribution: "ReelPulse Team",
+      attribution: "Reelytics Team",
     },
   ],
 };

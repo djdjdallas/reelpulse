@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-03",
   updatedAt: "2026-01-03",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "advanced-analytics",
@@ -25,7 +25,7 @@ export const article = {
       "studio analytics",
       "series revenue growth",
       "retention improvement",
-      "ReelPulse case study",
+      "Reelytics case study",
       "short-form content studio",
       "analytics adoption",
     ],
@@ -175,13 +175,13 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "After testing three tools over two weeks, they chose ReelPulse. The deciding factors were that it was specifically designed for serialized short-form content (not general video analytics), it supported all three of their distribution platforms, and it provided episode-level metrics and cohort analysis out of the box — the two capabilities they most urgently needed.",
+        "After testing three tools over two weeks, they chose Reelytics. The deciding factors were that it was specifically designed for serialized short-form content (not general video analytics), it supported all three of their distribution platforms, and it provided episode-level metrics and cohort analysis out of the box — the two capabilities they most urgently needed.",
     },
     {
       type: "callout",
       variant: "info",
       content:
-        "Bright Arc's evaluation criteria were: (1) Does it understand series as a concept, not just individual videos? (2) Does it support ReelShort, TikTok, and YouTube Shorts? (3) Can it do episode-level retention and revenue tracking? (4) Is the setup time measured in hours, not weeks? ReelPulse was the only tool that checked all four boxes.",
+        "Bright Arc's evaluation criteria were: (1) Does it understand series as a concept, not just individual videos? (2) Does it support ReelShort, TikTok, and YouTube Shorts? (3) Can it do episode-level retention and revenue tracking? (4) Is the setup time measured in hours, not weeks? Reelytics was the only tool that checked all four boxes.",
     },
     {
       type: "heading",
@@ -192,7 +192,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Within the first week of having ReelPulse connected to their accounts, Bright Arc discovered three things they had never known about their own content:",
+        "Within the first week of having Reelytics connected to their accounts, Bright Arc discovered three things they had never known about their own content:",
     },
     {
       type: "list",
@@ -292,12 +292,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "The writers began checking episode-level retention data in ReelPulse after each episode launch, not to react immediately (they had learned the dangers of reacting to daily noise), but to build an intuitive understanding of what worked and what didn't. Over time, this closed the loop between creative output and audience response in a way that pure gut feel never could.",
+        "The writers began checking episode-level retention data in Reelytics after each episode launch, not to react immediately (they had learned the dangers of reacting to daily noise), but to build an intuitive understanding of what worked and what didn't. Over time, this closed the loop between creative output and audience response in a way that pure gut feel never could.",
     },
     {
       type: "cta",
       heading: "Build a Data-Driven Studio",
-      text: "ReelPulse gives your entire team access to episode-level analytics, cohort retention, and revenue tracking — the same tools that helped Bright Arc grow revenue by 30%.",
+      text: "Reelytics gives your entire team access to episode-level analytics, cohort retention, and revenue tracking — the same tools that helped Bright Arc grow revenue by 30%.",
       buttonText: "Start Your Transformation",
       buttonHref: "/login",
     },
@@ -383,7 +383,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "ReelPulse provided the data, but the transformation happened because the team changed how they worked. The weekly analytics standups, the data-informed greenlight process, and the writers checking retention data after launches — these cultural practices are what turned raw data into better decisions. A tool without a culture of using it is just an expense.",
+        "Reelytics provided the data, but the transformation happened because the team changed how they worked. The weekly analytics standups, the data-informed greenlight process, and the writers checking retention data after launches — these cultural practices are what turned raw data into better decisions. A tool without a culture of using it is just an expense.",
     },
     {
       type: "heading",
@@ -432,8 +432,8 @@ export const article = {
     {
       type: "cta",
       heading: "Start Your Data-Driven Transformation",
-      text: "ReelPulse gives you the same episode-level analytics, cohort retention, and revenue tracking tools that powered Bright Arc's 30% revenue growth. See what data can do for your studio.",
-      buttonText: "Try ReelPulse Free",
+      text: "Reelytics gives you the same episode-level analytics, cohort retention, and revenue tracking tools that powered Bright Arc's 30% revenue growth. See what data can do for your studio.",
+      buttonText: "Try Reelytics Free",
       buttonHref: "/login",
     },
     {

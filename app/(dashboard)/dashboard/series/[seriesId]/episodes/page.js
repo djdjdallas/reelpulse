@@ -4,7 +4,7 @@ import { EpisodeManager } from "@/components/forms/EpisodeManager";
 import { getPlanLimits } from "@/lib/utils/featureGating";
 
 export const metadata = {
-  title: "Episodes — ReelPulse",
+  title: "Episodes — Reelytics",
 };
 
 export default async function EpisodesPage({ params }) {

@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-02-08",
   updatedAt: "2026-02-08",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "platform-analytics",
@@ -20,7 +20,7 @@ export const article = {
   featured: false,
   seo: {
     metaTitle:
-      "How to Track YouTube Shorts Series Performance (Step-by-Step) | ReelPulse",
+      "How to Track YouTube Shorts Series Performance (Step-by-Step) | Reelytics",
     metaDescription:
       "Step-by-step guide to tracking YouTube Shorts series. Learn to go beyond YouTube Studio with episode-level analytics, retention tracking, and third-party tools.",
     keywords: [
@@ -256,13 +256,13 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "ReelPulse connects to the YouTube Data API and automatically ingests your Shorts data, maps it to your series structure, and calculates all the metrics discussed in this guide without manual work. You get episode retention charts, binge rate estimates, drop-off alerts, and side-by-side comparisons of different series. ReelPulse also normalizes YouTube Shorts data alongside TikTok and ReelShort data if you distribute across platforms, giving you one unified view of your series performance.",
+        "Reelytics connects to the YouTube Data API and automatically ingests your Shorts data, maps it to your series structure, and calculates all the metrics discussed in this guide without manual work. You get episode retention charts, binge rate estimates, drop-off alerts, and side-by-side comparisons of different series. Reelytics also normalizes YouTube Shorts data alongside TikTok and ReelShort data if you distribute across platforms, giving you one unified view of your series performance.",
     },
     {
       type: "cta",
       heading: "Automate Your YouTube Shorts Series Tracking",
-      text: "Connect your YouTube channel to ReelPulse and get episode-level analytics, retention tracking, and binge rate analysis in minutes. No spreadsheets required.",
-      buttonText: "Connect YouTube to ReelPulse",
+      text: "Connect your YouTube channel to Reelytics and get episode-level analytics, retention tracking, and binge rate analysis in minutes. No spreadsheets required.",
+      buttonText: "Connect YouTube to Reelytics",
       buttonHref: "/login",
     },
     {
@@ -329,12 +329,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "If you use ReelPulse, this weekly routine collapses to about 10 minutes because the data collection, calculation, and visualization steps are automated. You spend your time on the analysis and action steps rather than the data wrangling.",
+        "If you use Reelytics, this weekly routine collapses to about 10 minutes because the data collection, calculation, and visualization steps are automated. You spend your time on the analysis and action steps rather than the data wrangling.",
     },
     {
       type: "cta",
       heading: "Turn Data into Better Episodes",
-      text: "ReelPulse gives YouTube Shorts series creators the episode-level analytics that YouTube Studio does not. See exactly where viewers drop off, which episodes drive binges, and how your series performs over time.",
+      text: "Reelytics gives YouTube Shorts series creators the episode-level analytics that YouTube Studio does not. See exactly where viewers drop off, which episodes drive binges, and how your series performs over time.",
       buttonText: "Start Your Free Dashboard",
       buttonHref: "/login",
     },
@@ -353,7 +353,7 @@ export const article = {
         "Use the ratio of Episode N+1 to Episode N views as a proxy for episode retention when tracking manually.",
         "Traffic source data, specifically suggested video referrals between adjacent episodes, is your best proxy for binge behavior in YouTube Studio.",
         "Weekly tracking routines compound over time. Thirty minutes per week translates to dramatically better creative decisions within a few months.",
-        "Third-party tools like ReelPulse automate the data collection and calculation work, letting you focus on the insights and actions that improve your series.",
+        "Third-party tools like Reelytics automate the data collection and calculation work, letting you focus on the insights and actions that improve your series.",
       ],
     },
   ],

@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { SeriesForm } from "@/components/forms/SeriesForm";
 
 export const metadata = {
-  title: "Series Settings — ReelPulse",
+  title: "Series Settings — Reelytics",
 };
 
 export default async function SeriesSettingsPage({ params }) {

@@ -18,7 +18,7 @@ export default function LoginPage() {
     <Card>
       <CardHeader className="text-center">
         <CardTitle className="text-2xl font-bold">
-          Welcome to <span className="text-primary">ReelPulse</span>
+          Welcome to <span className="text-primary">Reelytics</span>
         </CardTitle>
         <CardDescription>
           Sign in to access your analytics dashboard

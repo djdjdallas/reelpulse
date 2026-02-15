@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-15",
   updatedAt: "2026-01-15",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "advanced-analytics",
@@ -266,8 +266,8 @@ export const article = {
     {
       type: "cta",
       heading: "Automated Cross-Platform Reports, No Spreadsheets Required",
-      text: "ReelPulse automatically normalizes metrics across TikTok, YouTube Shorts, and ReelShort, then generates the weekly, monthly, and retrospective reports your studio needs. Stop spending hours on manual data compilation.",
-      buttonText: "Try ReelPulse for Studios",
+      text: "Reelytics automatically normalizes metrics across TikTok, YouTube Shorts, and ReelShort, then generates the weekly, monthly, and retrospective reports your studio needs. Stop spending hours on manual data compilation.",
+      buttonText: "Try Reelytics for Studios",
       buttonHref: "/login",
     },
     {
@@ -295,8 +295,8 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Using ReelPulse as Your Single Source of Truth",
-      id: "reelpulse-single-source",
+      text: "Using Reelytics as Your Single Source of Truth",
+      id: "reelytics-single-source",
     },
     {
       type: "paragraph",
@@ -306,17 +306,17 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "ReelPulse was designed to be the single source of truth for cross-platform series analytics. The platform handles the hard parts automatically: it maps episodes across platforms using metadata matching, normalizes metrics using its own research-backed conversion standards, and provides the hierarchical Catalog > Series > Episode navigation that content-first reporting requires.",
+        "Reelytics was designed to be the single source of truth for cross-platform series analytics. The platform handles the hard parts automatically: it maps episodes across platforms using metadata matching, normalizes metrics using its own research-backed conversion standards, and provides the hierarchical Catalog > Series > Episode navigation that content-first reporting requires.",
     },
     {
       type: "list",
       style: "unordered",
       items: [
-        "Automatic cross-platform episode matching: ReelPulse uses title patterns, metadata, and your internal IDs (if embedded in descriptions) to automatically link the same episode across TikTok, YouTube, and ReelShort.",
+        "Automatic cross-platform episode matching: Reelytics uses title patterns, metadata, and your internal IDs (if embedded in descriptions) to automatically link the same episode across TikTok, YouTube, and ReelShort.",
         "Built-in metric normalization: Qualified Views, Standardized Engagement Rate, and Normalized Retention are calculated automatically using formulas validated against industry benchmarks.",
         "Pre-built report templates: Weekly, monthly, and retrospective reports are available out of the box, formatted for both internal team use and external stakeholder presentations.",
         "Custom dashboard builder: Arrange widgets, choose metrics, set date ranges, and save views for different team roles. The content team sees different defaults than the finance team, but everyone works from the same underlying data.",
-        "API access for custom integrations: For studios that need to feed data into their own BI tools or data warehouses, ReelPulse provides a documented API with all normalized metrics available.",
+        "API access for custom integrations: For studios that need to feed data into their own BI tools or data warehouses, Reelytics provides a documented API with all normalized metrics available.",
       ],
     },
     {
@@ -365,7 +365,7 @@ export const article = {
     {
       type: "cta",
       heading: "Standardize Your Studio's Cross-Platform Reporting",
-      text: "ReelPulse gives your studio a single source of truth for series analytics across TikTok, YouTube Shorts, and ReelShort. Automated normalization, pre-built reports, and a dashboard designed for content teams.",
+      text: "Reelytics gives your studio a single source of truth for series analytics across TikTok, YouTube Shorts, and ReelShort. Automated normalization, pre-built reports, and a dashboard designed for content teams.",
       buttonText: "Start Your Free Trial",
       buttonHref: "/login",
     },

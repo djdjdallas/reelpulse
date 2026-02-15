@@ -4,7 +4,7 @@ export default function sitemap() {
   const articles = getAllArticles();
 
   const blogUrls = articles.map((article) => ({
-    url: `https://reelpulse.com/blog/${article.slug}`,
+    url: `https://reelytics.io/blog/${article.slug}`,
     lastModified: new Date(article.updatedAt || article.publishedAt),
     changeFrequency: "monthly",
     priority: 0.7,
@@ -12,32 +12,32 @@ export default function sitemap() {
 
   return [
     {
-      url: "https://reelpulse.com",
+      url: "https://reelytics.io",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://reelpulse.com/blog",
+      url: "https://reelytics.io/blog",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     ...blogUrls,
     {
-      url: "https://reelpulse.com/login",
+      url: "https://reelytics.io/login",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: "https://reelpulse.com/terms",
+      url: "https://reelytics.io/terms",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
     },
     {
-      url: "https://reelpulse.com/privacy",
+      url: "https://reelytics.io/privacy",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,

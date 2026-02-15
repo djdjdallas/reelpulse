@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { Pricing } from "@/components/marketing/Pricing";
 
 export const metadata = {
-  title: "Billing — ReelPulse",
+  title: "Billing — Reelytics",
 };
 
 export default async function BillingPage() {

@@ -10,12 +10,12 @@ import { Separator } from "@/components/ui/separator";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "ReelPulse",
+  name: "Reelytics",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description:
     "Analytics and paywall optimization for short-form series creators on ReelShort, DramaBox, ShortTV, and more.",
-  url: "https://reelpulse.com",
+  url: "https://reelytics.io",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-2 font-bold">
             <BarChart3 className="h-5 w-5 text-primary" />
-            ReelPulse
+            Reelytics
           </Link>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
             <Link
@@ -93,7 +93,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-sm text-muted-foreground sm:flex-row sm:justify-between">
           <div className="flex items-center gap-2">
             <BarChart3 className="h-4 w-4 text-primary" />
-            ReelPulse
+            Reelytics
           </div>
           <div className="flex items-center gap-4">
             <Link href="/blog" className="hover:text-foreground transition-colors">
@@ -106,7 +106,7 @@ export default function HomePage() {
               Privacy Policy
             </Link>
           </div>
-          <p>&copy; {new Date().getFullYear()} ReelPulse. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Reelytics. All rights reserved.</p>
         </div>
       </footer>
     </div>

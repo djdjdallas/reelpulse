@@ -4,7 +4,7 @@ import { MetricsPageClient } from "@/components/dashboard/MetricsPageClient";
 import { hasFeature } from "@/lib/utils/featureGating";
 
 export const metadata = {
-  title: "Metrics — ReelPulse",
+  title: "Metrics — Reelytics",
 };
 
 export default async function MetricsPage({ params }) {

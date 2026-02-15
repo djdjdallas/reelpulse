@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       {/* 1. Introduction */}
       <h2 className="text-2xl font-bold mt-10 mb-4">1. Introduction</h2>
       <p className="text-muted-foreground leading-relaxed mb-4">
-        At ReelPulse, we are committed to protecting your privacy and ensuring
+        At Reelytics, we are committed to protecting your privacy and ensuring
         the security of your personal information. This Privacy Policy explains
         how we collect, use, disclose, and safeguard your information when you
         use our analytics platform (&quot;the Service&quot;). By using the
@@ -206,10 +206,10 @@ export default function PrivacyPage() {
         If you have any questions or concerns about this Privacy Policy or our
         data practices, please contact us at{" "}
         <a
-          href="mailto:privacy@reelpulse.com"
+          href="mailto:privacy@reelytics.io"
           className="text-primary underline underline-offset-4 hover:text-primary/80"
         >
-          privacy@reelpulse.com
+          privacy@reelytics.io
         </a>
         .
       </p>

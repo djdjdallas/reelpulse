@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-02-04",
   updatedAt: "2026-02-04",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "platform-analytics",
@@ -14,7 +14,7 @@ export const article = {
   readingTime: "9 min read",
   featured: true,
   seo: {
-    metaTitle: "ReelShort Analytics: What Creators Need | ReelPulse",
+    metaTitle: "ReelShort Analytics: What Creators Need | Reelytics",
     metaDescription:
       "Understand ReelShort analytics for creators. Learn what the platform provides, what is missing, and how to track paywall conversion, revenue, and episode retention.",
     keywords: [
@@ -250,20 +250,20 @@ export const article = {
     {
       type: "cta",
       heading: "See Your ReelShort Data Like Never Before",
-      text: "ReelPulse gives ReelShort creators the episode-level retention curves, paywall analytics, and revenue attribution that the native dashboard does not. Understand exactly where viewers convert and why.",
-      buttonText: "Try ReelPulse for ReelShort",
+      text: "Reelytics gives ReelShort creators the episode-level retention curves, paywall analytics, and revenue attribution that the native dashboard does not. Understand exactly where viewers convert and why.",
+      buttonText: "Try Reelytics for ReelShort",
       buttonHref: "/login",
     },
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Fills the Analytics Gaps",
-      id: "reelpulse-integration",
+      text: "How Reelytics Fills the Analytics Gaps",
+      id: "reelytics-integration",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse was built with platforms like ReelShort in mind. Here is specifically how it addresses the gaps outlined above.",
+        "Reelytics was built with platforms like ReelShort in mind. Here is specifically how it addresses the gaps outlined above.",
     },
     {
       type: "list",
@@ -274,7 +274,7 @@ export const article = {
         "Binge metrics. Track average episodes per session, session frequency, and time-to-paywall. Understand the behavioral patterns that drive conversion and optimize for them.",
         "Revenue attribution by episode. See which episodes trigger purchase decisions and how revenue distributes across your paid content. Identify your revenue catalysts and replicate them.",
         "Cross-series insights. If you run multiple series, see audience overlap, cross-promotion effectiveness, and comparative performance on a single dashboard.",
-        "Cross-platform normalization. If you also distribute on TikTok or YouTube, ReelPulse brings all your data together so you can compare how the same series performs across platforms.",
+        "Cross-platform normalization. If you also distribute on TikTok or YouTube, Reelytics brings all your data together so you can compare how the same series performs across platforms.",
       ],
     },
     {
@@ -319,7 +319,7 @@ export const article = {
         "Paywall metrics are the most critical data points for ReelShort creators: paywall reach rate, conversion rate, post-paywall retention, and revenue per viewer.",
         "The last free episode before the paywall is the single most important episode in your series from a revenue perspective. Optimize it relentlessly.",
         "Post-paywall retention matters as much as pre-paywall retention. Paying viewers who abandon your series hurt your long-term brand and word-of-mouth growth.",
-        "Tools like ReelPulse fill ReelShort's analytics gaps with full retention curves, cohort analysis, binge metrics, and cross-platform normalization.",
+        "Tools like Reelytics fill ReelShort's analytics gaps with full retention curves, cohort analysis, binge metrics, and cross-platform normalization.",
       ],
     },
   ],

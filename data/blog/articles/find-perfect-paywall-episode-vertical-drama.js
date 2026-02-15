@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-31",
   updatedAt: "2026-01-31",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "paywall-optimization",
@@ -186,7 +186,7 @@ export const article = {
     {
       type: "cta",
       heading: "See Your Drop-Off Curve in Real Time",
-      text: "ReelPulse maps episode-to-episode retention across all your series, making it easy to identify exactly where viewers fall off and where your paywall should sit.",
+      text: "Reelytics maps episode-to-episode retention across all your series, making it easy to identify exactly where viewers fall off and where your paywall should sit.",
       buttonText: "Start Analyzing Your Series",
       buttonHref: "/login",
     },
@@ -289,13 +289,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Helps You Find the Optimal Paywall Episode",
-      id: "how-reelpulse-helps",
+      text: "How Reelytics Helps You Find the Optimal Paywall Episode",
+      id: "how-reelytics-helps",
     },
     {
       type: "paragraph",
       content:
-        "Finding the perfect paywall episode requires seeing patterns across episodes, series, and time periods. This is exactly what ReelPulse is built to do. Rather than piecing together data from multiple platform dashboards and spreadsheets, ReelPulse gives you a unified view of the metrics that matter for paywall decisions.",
+        "Finding the perfect paywall episode requires seeing patterns across episodes, series, and time periods. This is exactly what Reelytics is built to do. Rather than piecing together data from multiple platform dashboards and spreadsheets, Reelytics gives you a unified view of the metrics that matter for paywall decisions.",
     },
     {
       type: "list",
@@ -337,12 +337,12 @@ export const article = {
       type: "blockquote",
       content:
         "The perfect paywall episode is not a fixed number. It is the intersection of narrative tension, viewer investment, and data. Find that intersection for each series and you will consistently outperform creators who rely on rules of thumb.",
-      attribution: "ReelPulse Analytics Team",
+      attribution: "Reelytics Analytics Team",
     },
     {
       type: "cta",
       heading: "Stop Guessing Where to Place Your Paywall",
-      text: "ReelPulse gives you episode-level analytics, binge tracking, and paywall conversion data so you can make confident, data-backed paywall placement decisions for every series.",
+      text: "Reelytics gives you episode-level analytics, binge tracking, and paywall conversion data so you can make confident, data-backed paywall placement decisions for every series.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },

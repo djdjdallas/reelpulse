@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-27",
   updatedAt: "2026-01-27",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "fundamentals",
@@ -121,7 +121,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "If your platform or analytics tool provides session-level viewing data, this is the most accurate method. Group viewing events by user session, count the number of unique episodes watched per session, and calculate the percentage of sessions with three or more episodes. This is how ReelPulse calculates binge rate, automatically grouping viewing events into sessions and computing the metric for each series.",
+        "If your platform or analytics tool provides session-level viewing data, this is the most accurate method. Group viewing events by user session, count the number of unique episodes watched per session, and calculate the percentage of sessions with three or more episodes. This is how Reelytics calculates binge rate, automatically grouping viewing events into sessions and computing the metric for each series.",
     },
     {
       type: "heading",
@@ -181,7 +181,7 @@ export const article = {
     {
       type: "cta",
       heading: "Visualize Your Drop-Off Curve Instantly",
-      text: "ReelPulse automatically calculates episode drop-off for every series, giving you a visual curve that highlights exactly where viewers leave. No spreadsheets required.",
+      text: "Reelytics automatically calculates episode drop-off for every series, giving you a visual curve that highlights exactly where viewers leave. No spreadsheets required.",
       buttonText: "See Your Series Data",
       buttonHref: "/login",
     },
@@ -277,13 +277,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Tracking Binge Rate and Drop-Off with ReelPulse",
-      id: "tracking-with-reelpulse",
+      text: "Tracking Binge Rate and Drop-Off with Reelytics",
+      id: "tracking-with-reelytics",
     },
     {
       type: "paragraph",
       content:
-        "Manually calculating binge rate and episode drop-off requires exporting data, building spreadsheets, and updating them regularly. ReelPulse automates all of this. When you connect your series data, ReelPulse automatically computes binge rate and episode drop-off for every series, updates them in real time, and presents them in visual dashboards that make patterns immediately obvious.",
+        "Manually calculating binge rate and episode drop-off requires exporting data, building spreadsheets, and updating them regularly. Reelytics automates all of this. When you connect your series data, Reelytics automatically computes binge rate and episode drop-off for every series, updates them in real time, and presents them in visual dashboards that make patterns immediately obvious.",
     },
     {
       type: "list",
@@ -300,12 +300,12 @@ export const article = {
       type: "blockquote",
       content:
         "You can not improve what you can not measure. For series creators, binge rate and episode drop-off are the measurements that matter most. Everything else is a vanity metric.",
-      attribution: "ReelPulse Analytics Team",
+      attribution: "Reelytics Analytics Team",
     },
     {
       type: "cta",
       heading: "Start Measuring What Actually Matters",
-      text: "ReelPulse gives you binge rate, episode drop-off, and retention curves for every series in your catalog. See exactly where viewers engage and where they leave.",
+      text: "Reelytics gives you binge rate, episode drop-off, and retention curves for every series in your catalog. See exactly where viewers engage and where they leave.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },

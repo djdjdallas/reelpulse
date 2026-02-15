@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-29",
   updatedAt: "2026-01-29",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "paywall-optimization",
@@ -228,7 +228,7 @@ export const article = {
     {
       type: "cta",
       heading: "Track Every Paywall Metric in One Dashboard",
-      text: "ReelPulse gives you conversion rates, revenue per viewer, and subscriber retention data across all your series. See which paywall strategies are working and which need adjustment.",
+      text: "Reelytics gives you conversion rates, revenue per viewer, and subscriber retention data across all your series. See which paywall strategies are working and which need adjustment.",
       buttonText: "Start Optimizing Today",
       buttonHref: "/login",
     },
@@ -308,13 +308,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Using ReelPulse for Paywall Analytics",
-      id: "using-reelpulse-paywall-analytics",
+      text: "Using Reelytics for Paywall Analytics",
+      id: "using-reelytics-paywall-analytics",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse is designed to give short-form creators complete visibility into their paywall performance. Instead of manually pulling data from platform dashboards and calculating metrics in spreadsheets, ReelPulse automatically tracks the full spectrum of paywall metrics across all your series and platforms.",
+        "Reelytics is designed to give short-form creators complete visibility into their paywall performance. Instead of manually pulling data from platform dashboards and calculating metrics in spreadsheets, Reelytics automatically tracks the full spectrum of paywall metrics across all your series and platforms.",
     },
     {
       type: "list",
@@ -358,7 +358,7 @@ export const article = {
     {
       type: "cta",
       heading: "Ready to Optimize Your Paywall Strategy?",
-      text: "ReelPulse gives you the data and tools to systematically improve your paywall performance. Track conversion rates, run experiments, and maximize revenue across all your series.",
+      text: "Reelytics gives you the data and tools to systematically improve your paywall performance. Track conversion rates, run experiments, and maximize revenue across all your series.",
       buttonText: "Start Free Trial",
       buttonHref: "/login",
     },

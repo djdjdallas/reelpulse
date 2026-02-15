@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-02-10",
   updatedAt: "2026-02-10",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "fundamentals",
@@ -15,7 +15,7 @@ export const article = {
   featured: true,
   seo: {
     metaTitle:
-      "Short-Form Series Analytics: The Complete Guide for 2026 | ReelPulse",
+      "Short-Form Series Analytics: The Complete Guide for 2026 | Reelytics",
     metaDescription:
       "Master short-form series analytics in 2026. Learn how to track retention, binge rate, drop-off, and paywall conversion across TikTok, YouTube Shorts, and ReelShort.",
     keywords: [
@@ -247,12 +247,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Raw data from multiple platforms is useless until it is normalized and connected. Aggregation means mapping every video across every platform to its correct series and episode number, normalizing metrics so they are comparable, and building the cross-episode viewer journey that no single platform provides. This is where most creators hit a wall. Doing this in spreadsheets works for a single series on a single platform, but it breaks down fast as you scale. This is exactly the problem that purpose-built tools like ReelPulse are designed to solve, automatically ingesting data from multiple platforms, mapping it to your series structure, and producing unified dashboards.",
+        "Raw data from multiple platforms is useless until it is normalized and connected. Aggregation means mapping every video across every platform to its correct series and episode number, normalizing metrics so they are comparable, and building the cross-episode viewer journey that no single platform provides. This is where most creators hit a wall. Doing this in spreadsheets works for a single series on a single platform, but it breaks down fast as you scale. This is exactly the problem that purpose-built tools like Reelytics are designed to solve, automatically ingesting data from multiple platforms, mapping it to your series structure, and producing unified dashboards.",
     },
     {
       type: "cta",
       heading: "Skip the Spreadsheet Struggle",
-      text: "ReelPulse automatically connects your platforms, maps episodes, and gives you the series-level analytics that matter. Set up your first series in under five minutes.",
+      text: "Reelytics automatically connects your platforms, maps episodes, and gives you the series-level analytics that matter. Set up your first series in under five minutes.",
       buttonText: "Start Tracking Free",
       buttonHref: "/login",
     },
@@ -320,7 +320,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Purpose-built tools like ReelPulse represent the newest category. These platforms are designed from the ground up for serialized short-form content. They automatically ingest data from multiple platforms, map it to your series and episode structure, calculate series-specific metrics like binge rate and episode retention, and present everything in dashboards built for the decisions series creators actually make. The trade-off is cost, but for creators who are serious about growing a series-based business, the time savings and insight quality typically deliver a strong return.",
+        "Purpose-built tools like Reelytics represent the newest category. These platforms are designed from the ground up for serialized short-form content. They automatically ingest data from multiple platforms, map it to your series and episode structure, calculate series-specific metrics like binge rate and episode retention, and present everything in dashboards built for the decisions series creators actually make. The trade-off is cost, but for creators who are serious about growing a series-based business, the time savings and insight quality typically deliver a strong return.",
     },
     {
       type: "heading",
@@ -337,7 +337,7 @@ export const article = {
       type: "callout",
       variant: "tip",
       content:
-        "Start with native dashboards to understand what data exists, then move to a dedicated tool like ReelPulse when you are ready to make data-driven decisions about your series. Skipping straight to custom pipelines is overkill for most creators.",
+        "Start with native dashboards to understand what data exists, then move to a dedicated tool like Reelytics when you are ready to make data-driven decisions about your series. Skipping straight to custom pipelines is overkill for most creators.",
     },
     {
       type: "heading",
@@ -356,7 +356,7 @@ export const article = {
       items: [
         "Week 1: Audit your current data. Log into every platform where you publish, review what analytics are available, and document what is missing. Identify your top series and pull historical data into a simple spreadsheet to establish baselines.",
         "Week 2: Define your key metrics. Based on the core metrics in this guide, decide which five to seven metrics are most important for your specific situation. If you are monetizing through paywalls, paywall conversion is critical. If you are growing an audience, episode retention and binge rate take priority.",
-        "Week 3: Set up your tracking system. Either build a spreadsheet template that you will update weekly or sign up for a dedicated tool like ReelPulse and connect your platforms. The goal is a single place where you can see all your series data.",
+        "Week 3: Set up your tracking system. Either build a spreadsheet template that you will update weekly or sign up for a dedicated tool like Reelytics and connect your platforms. The goal is a single place where you can see all your series data.",
         "Week 4: Establish your review cadence. Block 30 minutes every week to review your metrics, identify one insight, and translate it into one action for your next episode or series. This weekly habit is what separates creators who use data from creators who just collect it.",
       ],
     },
@@ -396,13 +396,13 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "ReelPulse is built to stay ahead of these trends. As platforms evolve their series features and APIs, ReelPulse integrates those capabilities into a unified analytics experience so you do not have to rebuild your workflow every time a platform ships an update.",
+        "Reelytics is built to stay ahead of these trends. As platforms evolve their series features and APIs, Reelytics integrates those capabilities into a unified analytics experience so you do not have to rebuild your workflow every time a platform ships an update.",
     },
     {
       type: "cta",
       heading: "Ready to Take Your Series Analytics Seriously?",
-      text: "Join thousands of short-form series creators who use ReelPulse to track episode retention, binge rates, and revenue across every platform. Your first series dashboard is free.",
-      buttonText: "Get Started with ReelPulse",
+      text: "Join thousands of short-form series creators who use Reelytics to track episode retention, binge rates, and revenue across every platform. Your first series dashboard is free.",
+      buttonText: "Get Started with Reelytics",
       buttonHref: "/login",
     },
     {

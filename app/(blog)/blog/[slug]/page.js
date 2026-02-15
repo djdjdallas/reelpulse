@@ -59,12 +59,12 @@ export default async function ArticlePage({ params }) {
     },
     publisher: {
       "@type": "Organization",
-      name: "ReelPulse",
-      url: "https://reelpulse.com",
+      name: "Reelytics",
+      url: "https://reelytics.io",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://reelpulse.com/blog/${article.slug}`,
+      "@id": `https://reelytics.io/blog/${article.slug}`,
     },
   };
 

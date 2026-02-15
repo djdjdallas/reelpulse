@@ -2,14 +2,14 @@ import { ImageResponse } from "next/og";
 import { getArticleBySlug } from "@/data/blog";
 
 export const runtime = "edge";
-export const alt = "ReelPulse Blog";
+export const alt = "Reelytics Blog";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function TwitterImage({ params }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
-  const title = article?.title || "ReelPulse Blog";
+  const title = article?.title || "Reelytics Blog";
   const category = article?.category?.replace(/-/g, " ") || "Blog";
 
   return new ImageResponse(
@@ -42,7 +42,7 @@ export default async function TwitterImage({ params }) {
             <line x1="6" y1="20" x2="6" y2="14" />
           </svg>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#ffffff" }}>
-            ReelPulse
+            Reelytics
           </span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -75,7 +75,7 @@ export default async function TwitterImage({ params }) {
             color: "#94a3b8",
           }}
         >
-          reelpulse.com/blog
+          reelytics.io/blog
         </div>
       </div>
     ),

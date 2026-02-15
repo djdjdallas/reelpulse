@@ -56,7 +56,7 @@ export function Features() {
             Everything you need to optimize your series
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            From retention analytics to paywall optimization, ReelPulse gives
+            From retention analytics to paywall optimization, Reelytics gives
             you the data to make every episode count.
           </p>
         </div>

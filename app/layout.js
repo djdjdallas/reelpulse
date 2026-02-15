@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://reelpulse.com"),
+  metadataBase: new URL("https://reelytics.io"),
   title: {
-    default: "ReelPulse — Analytics for Short-Form Series Creators",
-    template: "%s | ReelPulse",
+    default: "Reelytics — Analytics for Short-Form Series Creators",
+    template: "%s | Reelytics",
   },
   description:
     "Stop guessing. Start optimizing. Analytics and paywall optimization for short-form series creators on ReelShort, DramaBox, ShortTV, and more.",
@@ -25,13 +25,13 @@ export const metadata = {
     "episode performance",
     "retention tracking",
   ],
-  authors: [{ name: "ReelPulse" }],
-  creator: "ReelPulse",
+  authors: [{ name: "Reelytics" }],
+  creator: "Reelytics",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "ReelPulse",
-    title: "ReelPulse — Analytics for Short-Form Series Creators",
+    siteName: "Reelytics",
+    title: "Reelytics — Analytics for Short-Form Series Creators",
     description:
       "Stop guessing. Start optimizing. Analytics and paywall optimization for short-form series creators.",
   },

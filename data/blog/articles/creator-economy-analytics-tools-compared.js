@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-17",
   updatedAt: "2026-01-17",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "tools-comparison",
@@ -175,7 +175,7 @@ export const article = {
           "Custom pricing",
         ],
         [
-          "ReelPulse",
+          "Reelytics",
           "Series Analytics",
           "TikTok, YouTube, ReelShort",
           "Full series + episode",
@@ -311,23 +311,23 @@ export const article = {
     {
       type: "heading",
       level: 3,
-      text: "ReelPulse: Purpose-Built for Series Creators",
-      id: "reelpulse-review",
+      text: "Reelytics: Purpose-Built for Series Creators",
+      id: "reelytics-review",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse occupies the series analytics category and is specifically designed for creators and studios producing serialized short-form content. The platform connects to TikTok, YouTube, and ReelShort, automatically organizes content into series, and provides episode-level analytics including cross-episode retention funnels, paywall conversion tracking, and per-episode revenue attribution.",
+        "Reelytics occupies the series analytics category and is specifically designed for creators and studios producing serialized short-form content. The platform connects to TikTok, YouTube, and ReelShort, automatically organizes content into series, and provides episode-level analytics including cross-episode retention funnels, paywall conversion tracking, and per-episode revenue attribution.",
     },
     {
       type: "paragraph",
       content:
-        "Strengths: Only platform with full series and episode intelligence, cross-episode retention funnels, paywall placement analytics, cross-platform series comparison, per-episode revenue attribution, free tier for individual creators. Weaknesses: Focused on short-form series (not designed for long-form content or non-sequential posts), platform coverage limited to TikTok, YouTube, and ReelShort (Instagram Reels integration coming), newer platform with a growing feature set. ReelPulse is the clear choice for creators whose content strategy centers on serialized short-form content.",
+        "Strengths: Only platform with full series and episode intelligence, cross-episode retention funnels, paywall placement analytics, cross-platform series comparison, per-episode revenue attribution, free tier for individual creators. Weaknesses: Focused on short-form series (not designed for long-form content or non-sequential posts), platform coverage limited to TikTok, YouTube, and ReelShort (Instagram Reels integration coming), newer platform with a growing feature set. Reelytics is the clear choice for creators whose content strategy centers on serialized short-form content.",
     },
     {
       type: "cta",
       heading: "The Only Analytics Platform Built for Series",
-      text: "If your content strategy is built around serialized short-form video, ReelPulse provides the series-level intelligence that no general-purpose tool can match. See episode retention funnels, paywall optimization data, and cross-platform series performance in one dashboard.",
+      text: "If your content strategy is built around serialized short-form video, Reelytics provides the series-level intelligence that no general-purpose tool can match. See episode retention funnels, paywall optimization data, and cross-platform series performance in one dashboard.",
       buttonText: "Start Free",
       buttonHref: "/login",
     },
@@ -362,7 +362,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "If you produce serialized content on one platform and are beginning to think about paywall optimization or subscriber conversion, a series-specific analytics tool is the highest-impact addition to your stack. The native platform analytics cover your basic metrics; a tool like ReelPulse adds the series intelligence layer. Total cost: $0 with a free tier, scaling as your needs grow.",
+        "If you produce serialized content on one platform and are beginning to think about paywall optimization or subscriber conversion, a series-specific analytics tool is the highest-impact addition to your stack. The native platform analytics cover your basic metrics; a tool like Reelytics adds the series intelligence layer. Total cost: $0 with a free tier, scaling as your needs grow.",
     },
     {
       type: "heading",
@@ -402,7 +402,7 @@ export const article = {
       style: "ordered",
       items: [
         "Native platform analytics (free): Use YouTube Studio, TikTok Analytics, and platform-specific dashboards for real-time monitoring and platform-specific metrics like ad revenue. These are your first line of data.",
-        "A series-specific analytics platform: This is your strategic hub for understanding how your content performs as series, where viewers drop off, where they convert, and how to optimize your content arc. ReelPulse fills this role for short-form series creators.",
+        "A series-specific analytics platform: This is your strategic hub for understanding how your content performs as series, where viewers drop off, where they convert, and how to optimize your content arc. Reelytics fills this role for short-form series creators.",
         "One supplementary specialist tool: Depending on your biggest gap, add a revenue aggregator (Stir), a trend intelligence tool (Pentos), or an audience research platform (SparkToro). Pick the one that addresses your most pressing blind spot.",
       ],
     },
@@ -453,7 +453,7 @@ export const article = {
     {
       type: "cta",
       heading: "Find Out What Your Series Data Is Telling You",
-      text: "ReelPulse transforms your short-form video data into series intelligence. Connect your accounts, organize your series, and start making data-driven decisions about episode pacing, paywall placement, and cross-platform strategy.",
+      text: "Reelytics transforms your short-form video data into series intelligence. Connect your accounts, organize your series, and start making data-driven decisions about episode pacing, paywall placement, and cross-platform strategy.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },

@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ["/dashboard/", "/api/"],
       },
     ],
-    sitemap: "https://reelpulse.com/sitemap.xml",
+    sitemap: "https://reelytics.io/sitemap.xml",
   };
 }

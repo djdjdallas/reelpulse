@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-07",
   updatedAt: "2026-01-07",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "advanced-analytics",
@@ -27,7 +27,7 @@ export const article = {
       "paywall retention",
       "viewer lifetime value",
       "retention curves",
-      "ReelPulse",
+      "Reelytics",
       "vertical drama analytics",
     ],
   },
@@ -332,26 +332,26 @@ export const article = {
     {
       type: "cta",
       heading: "Unlock Cohort Retention Insights",
-      text: "ReelPulse builds cohort retention tables automatically for every series — split by paywall status, entry point, conversion speed, and more. See exactly how each viewer segment moves through your series.",
+      text: "Reelytics builds cohort retention tables automatically for every series — split by paywall status, entry point, conversion speed, and more. See exactly how each viewer segment moves through your series.",
       buttonText: "Try Cohort Analysis",
       buttonHref: "/login",
     },
     {
       type: "heading",
       level: 2,
-      text: "ReelPulse Cohort Analysis Features",
-      id: "reelpulse-cohort-features",
+      text: "Reelytics Cohort Analysis Features",
+      id: "reelytics-cohort-features",
     },
     {
       type: "paragraph",
       content:
-        "Building cohort retention tables manually is labor-intensive and requires data that is often difficult to extract from platform dashboards. ReelPulse automates the entire process and provides cohort analysis features specifically designed for serialized short-form content.",
+        "Building cohort retention tables manually is labor-intensive and requires data that is often difficult to extract from platform dashboards. Reelytics automates the entire process and provides cohort analysis features specifically designed for serialized short-form content.",
     },
     {
       type: "list",
       style: "unordered",
       items: [
-        "Automatic cohort creation: ReelPulse generates weekly and monthly cohorts based on viewer start dates, with no manual data work required.",
+        "Automatic cohort creation: Reelytics generates weekly and monthly cohorts based on viewer start dates, with no manual data work required.",
         "Pre-paywall and post-paywall splits: Every cohort is automatically segmented into free and paid viewers, giving you separate retention curves for each group.",
         "Visual retention heatmaps: Color-coded tables make it easy to spot which cohorts and which episodes are underperforming at a glance.",
         "Cohort comparison overlays: Plot multiple cohort retention curves on the same chart to track improvements or regressions over time.",
@@ -407,12 +407,12 @@ export const article = {
       type: "blockquote",
       content:
         "The studios that consistently grow their series revenue are the ones that understand their retention data at the cohort level. They know not just that viewers are leaving, but which viewers, at which point, and why. That understanding is what turns a good series into a great business.",
-      attribution: "ReelPulse Analytics Team",
+      attribution: "Reelytics Analytics Team",
     },
     {
       type: "paragraph",
       content:
-        "Whether you build your cohort analysis manually or use a tool like ReelPulse, the investment in understanding your retention data at this level of depth will pay for itself many times over. In the competitive landscape of short-form series, the creators who understand their audience's journey episode by episode are the ones who build sustainable, growing content businesses.",
+        "Whether you build your cohort analysis manually or use a tool like Reelytics, the investment in understanding your retention data at this level of depth will pay for itself many times over. In the competitive landscape of short-form series, the creators who understand their audience's journey episode by episode are the ones who build sustainable, growing content businesses.",
     },
   ],
 };

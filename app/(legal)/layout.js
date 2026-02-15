@@ -9,7 +9,7 @@ export default function LegalLayout({ children }) {
         <div className="max-w-3xl mx-auto px-6 flex items-center justify-between h-14">
           <Link href="/" className="flex items-center gap-2 font-bold text-lg">
             <BarChart3 className="size-5 text-primary" />
-            ReelPulse
+            Reelytics
           </Link>
           <Button asChild variant="outline" size="sm">
             <Link href="/">Back to Home</Link>
@@ -23,7 +23,7 @@ export default function LegalLayout({ children }) {
 
       <footer className="border-t">
         <div className="max-w-3xl mx-auto px-6 py-6 text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} ReelPulse. All rights reserved.
+          &copy; {new Date().getFullYear()} Reelytics. All rights reserved.
         </div>
       </footer>
     </div>

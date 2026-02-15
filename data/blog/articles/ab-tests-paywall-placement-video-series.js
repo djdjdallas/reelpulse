@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-13",
   updatedAt: "2026-01-13",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "paywall-optimization",
@@ -264,8 +264,8 @@ export const article = {
     {
       type: "cta",
       heading: "Run Paywall A/B Tests Without the Spreadsheet Gymnastics",
-      text: "ReelPulse includes built-in A/B testing for paywall placement. Define variants, automatically split traffic, and get statistically rigorous results with clear recommendations. No statistics degree required.",
-      buttonText: "Start Testing with ReelPulse",
+      text: "Reelytics includes built-in A/B testing for paywall placement. Define variants, automatically split traffic, and get statistically rigorous results with clear recommendations. No statistics degree required.",
+      buttonText: "Start Testing with Reelytics",
       buttonHref: "/login",
     },
     {
@@ -337,22 +337,22 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Running Paywall Tests with ReelPulse",
-      id: "testing-with-reelpulse",
+      text: "Running Paywall Tests with Reelytics",
+      id: "testing-with-reelytics",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse includes a dedicated experimentation module designed for paywall optimization. The platform handles the statistical complexity so you can focus on the creative and strategic decisions. Here is how the workflow works.",
+        "Reelytics includes a dedicated experimentation module designed for paywall optimization. The platform handles the statistical complexity so you can focus on the creative and strategic decisions. Here is how the workflow works.",
     },
     {
       type: "list",
       style: "ordered",
       items: [
-        "Define your experiment: Select the series, choose your control and treatment paywall positions, set your primary and guardrail metrics, and specify your desired confidence level. ReelPulse automatically calculates the required sample size and estimated test duration based on your series' current traffic.",
-        "Launch and monitor: ReelPulse handles viewer-level randomization and variant assignment automatically. During the test, you can view an experiment dashboard that shows progress toward your target sample size without revealing which variant is winning (to prevent the peeking problem).",
-        "Review results: When the test reaches the required sample size and duration, ReelPulse presents the results with clear statistical analysis. It shows the difference in your primary metric, the confidence interval, whether guardrail metrics were preserved, and a plain-language recommendation.",
-        "Implement the winner: If the test produces a clear winner, ReelPulse can apply the winning paywall position to your series automatically. If the result is inconclusive, it suggests follow-up experiments to narrow down the optimal position.",
+        "Define your experiment: Select the series, choose your control and treatment paywall positions, set your primary and guardrail metrics, and specify your desired confidence level. Reelytics automatically calculates the required sample size and estimated test duration based on your series' current traffic.",
+        "Launch and monitor: Reelytics handles viewer-level randomization and variant assignment automatically. During the test, you can view an experiment dashboard that shows progress toward your target sample size without revealing which variant is winning (to prevent the peeking problem).",
+        "Review results: When the test reaches the required sample size and duration, Reelytics presents the results with clear statistical analysis. It shows the difference in your primary metric, the confidence interval, whether guardrail metrics were preserved, and a plain-language recommendation.",
+        "Implement the winner: If the test produces a clear winner, Reelytics can apply the winning paywall position to your series automatically. If the result is inconclusive, it suggests follow-up experiments to narrow down the optimal position.",
       ],
     },
     {
@@ -398,7 +398,7 @@ export const article = {
     {
       type: "cta",
       heading: "Optimize Your Paywall with Data, Not Guesswork",
-      text: "ReelPulse makes paywall A/B testing accessible for every series creator. Design experiments, track results with statistical rigor, and find the paywall position that maximizes your revenue per viewer.",
+      text: "Reelytics makes paywall A/B testing accessible for every series creator. Design experiments, track results with statistical rigor, and find the paywall position that maximizes your revenue per viewer.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },

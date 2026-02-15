@@ -9,7 +9,7 @@ export function ArticleCTA() {
         Ready to put these insights into action?
       </h2>
       <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-        ReelPulse gives you episode-level analytics, paywall optimization, and
+        Reelytics gives you episode-level analytics, paywall optimization, and
         cross-platform reporting — all in one dashboard.
       </p>
       <Button asChild size="lg" className="mt-6">

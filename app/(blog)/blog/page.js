@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Insights and strategies for short-form series creators. Learn about analytics, paywall optimization, and growing your audience.",
   openGraph: {
-    title: "ReelPulse Blog",
+    title: "Reelytics Blog",
     description:
       "Insights and strategies for short-form series creators.",
   },
@@ -17,14 +17,14 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "ReelPulse Blog",
+  name: "Reelytics Blog",
   description:
     "Insights and strategies for short-form series creators.",
-  url: "https://reelpulse.com/blog",
+  url: "https://reelytics.io/blog",
   publisher: {
     "@type": "Organization",
-    name: "ReelPulse",
-    url: "https://reelpulse.com",
+    name: "Reelytics",
+    url: "https://reelytics.io",
   },
 };
 
@@ -79,7 +79,7 @@ export default async function BlogIndexPage({ searchParams }) {
       {/* Page header */}
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          ReelPulse Blog
+          Reelytics Blog
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
           Insights and strategies for short-form series creators

@@ -5,7 +5,7 @@ import { canCreateSeries } from "@/lib/utils/featureGating";
 import { UpgradeBanner } from "@/components/dashboard/UpgradeBanner";
 
 export const metadata = {
-  title: "New Series — ReelPulse",
+  title: "New Series — Reelytics",
 };
 
 export default async function NewSeriesPage() {

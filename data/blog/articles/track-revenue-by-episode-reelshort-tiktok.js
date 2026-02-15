@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-09",
   updatedAt: "2026-01-09",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "paywall-optimization",
@@ -32,7 +32,7 @@ export const article = {
       "paywall conversion rate",
       "LTV by entry point",
       "short-form series revenue",
-      "ReelPulse",
+      "Reelytics",
       "monetization analytics",
     ],
   },
@@ -300,15 +300,15 @@ export const article = {
     {
       type: "cta",
       heading: "Track Revenue Down to the Episode",
-      text: "ReelPulse calculates ARPE, conversion rates, and LTV by entry point automatically across all your series and platforms. Stop guessing where your revenue comes from.",
+      text: "Reelytics calculates ARPE, conversion rates, and LTV by entry point automatically across all your series and platforms. Stop guessing where your revenue comes from.",
       buttonText: "Start Revenue Tracking",
       buttonHref: "/login",
     },
     {
       type: "heading",
       level: 2,
-      text: "Automating Episode Revenue Tracking with ReelPulse",
-      id: "automating-with-reelpulse",
+      text: "Automating Episode Revenue Tracking with Reelytics",
+      id: "automating-with-reelytics",
     },
     {
       type: "paragraph",
@@ -318,7 +318,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "ReelPulse automates the entire episode revenue tracking workflow. Once you connect your platform accounts, ReelPulse pulls per-episode revenue data automatically, normalizes it across platforms, and calculates all the key metrics described in this article — ARPE, conversion rate per episode, LTV by entry point, and more.",
+        "Reelytics automates the entire episode revenue tracking workflow. Once you connect your platform accounts, Reelytics pulls per-episode revenue data automatically, normalizes it across platforms, and calculates all the key metrics described in this article — ARPE, conversion rate per episode, LTV by entry point, and more.",
     },
     {
       type: "list",
@@ -326,7 +326,7 @@ export const article = {
       items: [
         "Automated data ingestion: Revenue data is pulled from ReelShort, TikTok, and YouTube on a daily basis, with no manual exports required.",
         "Cross-platform normalization: Revenue from different platforms is converted to a common basis so you can compare apples to apples.",
-        "Attribution modeling: ReelPulse supports last-touch, linear, and weighted attribution models. You can switch between them to see how different models change your understanding of episode revenue contribution.",
+        "Attribution modeling: Reelytics supports last-touch, linear, and weighted attribution models. You can switch between them to see how different models change your understanding of episode revenue contribution.",
         "Revenue trend alerts: Get notified when an episode's revenue deviates significantly from its historical average — a signal that something has changed (algorithm shift, viral moment, or content issue).",
         "Export-ready reports: Generate episode-level revenue reports for stakeholders, investors, or brand partners without spending hours in spreadsheets.",
       ],
@@ -356,14 +356,14 @@ export const article = {
         "Calculate ARPE and identify your top 5 and bottom 5 episodes by revenue. Ask yourself: what makes the top performers different?",
         "If you have a paywalled series, calculate the conversion rate at your current paywall episode and at the two episodes before and after it. This tells you whether your paywall is in the right place.",
         "Track LTV by entry point for at least one series. Even a rough calculation will reveal whether certain entry points are more valuable than others.",
-        "Once you have validated the value of episode-level revenue data, consider automating with a tool like ReelPulse to scale the practice across all your content.",
+        "Once you have validated the value of episode-level revenue data, consider automating with a tool like Reelytics to scale the practice across all your content.",
       ],
     },
     {
       type: "blockquote",
       content:
         "The creators who understand their revenue at the episode level are the ones who can confidently invest in their next series, because they know exactly what drives their income and what doesn't.",
-      attribution: "ReelPulse Analytics Team",
+      attribution: "Reelytics Analytics Team",
     },
     {
       type: "heading",
@@ -379,7 +379,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "The good news is that you can start today, even with a simple spreadsheet. And as your operation grows, tools like ReelPulse can automate the process and give you the kind of revenue intelligence that used to be reserved for large streaming platforms. The data is there — you just need to start collecting it.",
+        "The good news is that you can start today, even with a simple spreadsheet. And as your operation grows, tools like Reelytics can automate the process and give you the kind of revenue intelligence that used to be reserved for large streaming platforms. The data is there — you just need to start collecting it.",
     },
   ],
 };

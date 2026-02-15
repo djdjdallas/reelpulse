@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-19",
   updatedAt: "2026-01-19",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "tools-comparison",
@@ -288,7 +288,7 @@ export const article = {
     {
       type: "cta",
       heading: "Go Beyond What YouTube Studio Shows You",
-      text: "ReelPulse connects to your YouTube channel and instantly organizes your Shorts into series with episode-level retention funnels, cross-platform comparison, and revenue attribution.",
+      text: "Reelytics connects to your YouTube channel and instantly organizes your Shorts into series with episode-level retention funnels, cross-platform comparison, and revenue attribution.",
       buttonText: "Connect Your Channel",
       buttonHref: "/login",
     },
@@ -340,18 +340,18 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Complements YouTube Studio",
-      id: "reelpulse-complements-studio",
+      text: "How Reelytics Complements YouTube Studio",
+      id: "reelytics-complements-studio",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse is designed to work alongside YouTube Studio, not replace it. Studio remains your go-to for real-time monitoring, ad revenue reporting, and YouTube-specific features. ReelPulse adds the series intelligence layer that Studio lacks: automatic episode grouping, cross-episode retention funnels, paywall conversion tracking, and cross-platform series comparison.",
+        "Reelytics is designed to work alongside YouTube Studio, not replace it. Studio remains your go-to for real-time monitoring, ad revenue reporting, and YouTube-specific features. Reelytics adds the series intelligence layer that Studio lacks: automatic episode grouping, cross-episode retention funnels, paywall conversion tracking, and cross-platform series comparison.",
     },
     {
       type: "paragraph",
       content:
-        "The integration works by connecting to the YouTube Data API with your authorization. ReelPulse pulls your Shorts data, automatically detects series based on titles and metadata, and builds the analytical models that transform video-level data into series-level intelligence. Your historical data is preserved indefinitely, giving you the long-term trend analysis that Studio's limited retention windows make difficult.",
+        "The integration works by connecting to the YouTube Data API with your authorization. Reelytics pulls your Shorts data, automatically detects series based on titles and metadata, and builds the analytical models that transform video-level data into series-level intelligence. Your historical data is preserved indefinitely, giving you the long-term trend analysis that Studio's limited retention windows make difficult.",
     },
     {
       type: "blockquote",
@@ -378,7 +378,7 @@ export const article = {
     {
       type: "cta",
       heading: "Add Series Intelligence to Your YouTube Analytics",
-      text: "ReelPulse layers series-level analytics on top of YouTube Studio. Connect your channel in under two minutes and see your Shorts data transformed into actionable series insights.",
+      text: "Reelytics layers series-level analytics on top of YouTube Studio. Connect your channel in under two minutes and see your Shorts data transformed into actionable series insights.",
       buttonText: "Start Free Trial",
       buttonHref: "/login",
     },

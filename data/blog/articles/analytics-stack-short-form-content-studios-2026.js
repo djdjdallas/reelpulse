@@ -2,11 +2,11 @@ export const article = {
   slug: "analytics-stack-short-form-content-studios-2026",
   title: "The Analytics Stack for Short-Form Content Studios in 2026",
   description:
-    "Build the right analytics stack for your short-form content studio. Learn the essential layers from data collection to optimization, compare recommended tools for each layer, and understand where ReelPulse fits.",
+    "Build the right analytics stack for your short-form content studio. Learn the essential layers from data collection to optimization, compare recommended tools for each layer, and understand where Reelytics fits.",
   publishedAt: "2026-01-25",
   updatedAt: "2026-01-25",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "tools-comparison",
@@ -186,7 +186,7 @@ export const article = {
         ],
         [
           "Aggregation",
-          "ReelPulse",
+          "Reelytics",
           "Purpose-built for series-level metrics across platforms",
           "Focused specifically on short-form series analytics",
         ],
@@ -204,7 +204,7 @@ export const article = {
         ],
         [
           "Visualization",
-          "ReelPulse dashboards",
+          "Reelytics dashboards",
           "Pre-built series analytics dashboards, no setup needed",
           "Designed for series analytics specifically",
         ],
@@ -216,7 +216,7 @@ export const article = {
         ],
         [
           "Optimization",
-          "ReelPulse insights",
+          "Reelytics insights",
           "Automated paywall and content optimization suggestions",
           "Recommendations focus on series-level decisions",
         ],
@@ -225,13 +225,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Fits as the Series Analytics Layer",
-      id: "how-reelpulse-fits",
+      text: "How Reelytics Fits as the Series Analytics Layer",
+      id: "how-reelytics-fits",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse is not a general-purpose analytics tool. It is specifically built as the series analytics layer for short-form content studios. It sits on top of your platform data and provides the series-level metrics, cross-platform aggregation, and optimization insights that generic tools cannot offer out of the box.",
+        "Reelytics is not a general-purpose analytics tool. It is specifically built as the series analytics layer for short-form content studios. It sits on top of your platform data and provides the series-level metrics, cross-platform aggregation, and optimization insights that generic tools cannot offer out of the box.",
     },
     {
       type: "list",
@@ -247,13 +247,13 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "For studios that already have a data warehouse or BI tool, ReelPulse complements those tools by handling the short-form series-specific analytics that generic platforms cannot. For studios without existing analytics infrastructure, ReelPulse can serve as the entire analytics stack, covering collection through optimization in a single tool.",
+        "For studios that already have a data warehouse or BI tool, Reelytics complements those tools by handling the short-form series-specific analytics that generic platforms cannot. For studios without existing analytics infrastructure, Reelytics can serve as the entire analytics stack, covering collection through optimization in a single tool.",
     },
     {
       type: "cta",
       heading: "The Series Analytics Layer Your Studio Needs",
-      text: "ReelPulse handles data collection, series-level aggregation, visualization, and optimization in one platform. Purpose-built for short-form content studios.",
-      buttonText: "Explore ReelPulse for Studios",
+      text: "Reelytics handles data collection, series-level aggregation, visualization, and optimization in one platform. Purpose-built for short-form content studios.",
+      buttonText: "Explore Reelytics for Studios",
       buttonHref: "/login",
     },
     {
@@ -276,7 +276,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "At this stage, complexity is your enemy. You need simple, reliable data tracking without significant time investment. Start with platform-native analytics for daily monitoring. Add a single tool like ReelPulse to get series-level metrics that platforms do not provide. Use a simple spreadsheet to track monthly KPIs. The total setup time should be under an hour. Your goal is to build the habit of data-driven decision-making before you need advanced tools.",
+        "At this stage, complexity is your enemy. You need simple, reliable data tracking without significant time investment. Start with platform-native analytics for daily monitoring. Add a single tool like Reelytics to get series-level metrics that platforms do not provide. Use a simple spreadsheet to track monthly KPIs. The total setup time should be under an hour. Your goal is to build the habit of data-driven decision-making before you need advanced tools.",
     },
     {
       type: "heading",
@@ -311,7 +311,7 @@ export const article = {
       style: "ordered",
       items: [
         "Over-engineering too early. A three-person studio does not need a data warehouse, a transformation pipeline, and enterprise BI software. Start simple and add complexity only when your current tools are genuinely limiting your decision-making.",
-        "Building custom when off-the-shelf works. Writing custom code to compute binge rate when a tool like ReelPulse does it automatically is a poor use of engineering time. Reserve custom development for truly unique analytical needs.",
+        "Building custom when off-the-shelf works. Writing custom code to compute binge rate when a tool like Reelytics does it automatically is a poor use of engineering time. Reserve custom development for truly unique analytical needs.",
         "Collecting data without acting on it. A beautiful dashboard that nobody checks is worse than no dashboard at all because it creates a false sense of data-drivenness. Only collect and visualize metrics that directly inform decisions.",
         "Ignoring data quality. Garbage in, garbage out. If your data collection is inconsistent, has gaps, or misattributes episodes to the wrong series, every downstream analysis will be wrong. Invest in data quality checks before you invest in fancy visualizations.",
         "Siloing analytics from production. Analytics should inform content creation, not sit in a separate department. Make sure your producers and writers have access to episode-level performance data and understand how to interpret it.",
@@ -349,12 +349,12 @@ export const article = {
       type: "blockquote",
       content:
         "The studios that thrive in 2026 will be the ones that treat analytics as a core competency, not an afterthought. Your analytics stack is the nervous system of your content operation. Invest in it accordingly.",
-      attribution: "ReelPulse Content Studio Report, 2026",
+      attribution: "Reelytics Content Studio Report, 2026",
     },
     {
       type: "cta",
       heading: "Build Your Analytics Stack Today",
-      text: "ReelPulse is the purpose-built series analytics layer for short-form content studios. Connect your platforms, get instant series-level metrics, and start making data-driven decisions.",
+      text: "Reelytics is the purpose-built series analytics layer for short-form content studios. Connect your platforms, get instant series-level metrics, and start making data-driven decisions.",
       buttonText: "Start Your Free Trial",
       buttonHref: "/login",
     },

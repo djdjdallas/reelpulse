@@ -11,7 +11,7 @@ export default function BlogLayout({ children }) {
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-2 font-bold">
             <BarChart3 className="h-5 w-5 text-primary" />
-            ReelPulse
+            Reelytics
           </Link>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
             <Link
@@ -56,7 +56,7 @@ export default function BlogLayout({ children }) {
                 className="flex items-center gap-2 font-bold"
               >
                 <BarChart3 className="h-4 w-4 text-primary" />
-                ReelPulse
+                Reelytics
               </Link>
               <p className="mt-2 text-sm text-muted-foreground">
                 Analytics for short-form series creators.
@@ -113,7 +113,7 @@ export default function BlogLayout({ children }) {
             </div>
           </div>
           <div className="mt-8 border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} ReelPulse. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Reelytics. All rights reserved.</p>
           </div>
         </div>
       </footer>

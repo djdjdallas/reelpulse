@@ -13,11 +13,11 @@ export default function TermsPage() {
       {/* 1. Acceptance of Terms */}
       <h2 className="text-2xl font-bold mt-10 mb-4">1. Acceptance of Terms</h2>
       <p className="text-muted-foreground leading-relaxed mb-4">
-        By accessing or using ReelPulse (&quot;the Service&quot;), you agree to
+        By accessing or using Reelytics (&quot;the Service&quot;), you agree to
         be bound by these Terms of Service (&quot;Terms&quot;). If you do not
         agree to all of these Terms, you may not access or use the Service.
         These Terms constitute a legally binding agreement between you and
-        ReelPulse.
+        Reelytics.
       </p>
 
       {/* 2. Description of Service */}
@@ -25,7 +25,7 @@ export default function TermsPage() {
         2. Description of Service
       </h2>
       <p className="text-muted-foreground leading-relaxed mb-4">
-        ReelPulse is an analytics platform designed for short-form series
+        Reelytics is an analytics platform designed for short-form series
         creators. The Service provides tools for tracking episode performance,
         audience retention, paywall optimization, and revenue analytics across
         platforms such as ReelShort, DramaBox, ShortTV, and others. Features and
@@ -54,7 +54,7 @@ export default function TermsPage() {
         4. Subscription &amp; Billing
       </h2>
       <p className="text-muted-foreground leading-relaxed mb-4">
-        ReelPulse offers subscription-based plans with recurring billing.
+        Reelytics offers subscription-based plans with recurring billing.
         Payments are processed securely through Stripe. By subscribing to a paid
         plan, you authorize us to charge your payment method on a recurring
         basis at the then-current subscription rate.
@@ -84,7 +84,7 @@ export default function TermsPage() {
       <p className="text-muted-foreground leading-relaxed mb-4">
         You retain full ownership of all data and content you submit to the
         Service (&quot;User Content&quot;). By using the Service, you grant
-        ReelPulse a limited, non-exclusive license to use, process, and display
+        Reelytics a limited, non-exclusive license to use, process, and display
         your User Content solely for the purpose of operating and providing the
         Service to you.
       </p>
@@ -131,7 +131,7 @@ export default function TermsPage() {
       <p className="text-muted-foreground leading-relaxed mb-4">
         The Service, including its original content, features, functionality,
         design, and branding, is and will remain the exclusive property of
-        ReelPulse. The Service is protected by copyright, trademark, and other
+        Reelytics. The Service is protected by copyright, trademark, and other
         applicable laws. Our trademarks and trade dress may not be used in
         connection with any product or service without prior written consent.
       </p>
@@ -162,11 +162,11 @@ export default function TermsPage() {
         non-infringement.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-4">
-        In no event shall ReelPulse, its directors, employees, partners, or
+        In no event shall Reelytics, its directors, employees, partners, or
         affiliates be liable for any indirect, incidental, special,
         consequential, or punitive damages, including without limitation loss of
         profits, data, or use. Our total aggregate liability shall not exceed
-        the amount you have paid to ReelPulse in the twelve (12) months
+        the amount you have paid to Reelytics in the twelve (12) months
         preceding the claim.
       </p>
 
@@ -196,10 +196,10 @@ export default function TermsPage() {
         If you have any questions about these Terms of Service, please contact
         us at{" "}
         <a
-          href="mailto:legal@reelpulse.com"
+          href="mailto:legal@reelytics.io"
           className="text-primary underline underline-offset-4 hover:text-primary/80"
         >
-          legal@reelpulse.com
+          legal@reelytics.io
         </a>
         .
       </p>

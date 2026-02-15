@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-02-06",
   updatedAt: "2026-02-06",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "platform-analytics",
@@ -15,7 +15,7 @@ export const article = {
   featured: false,
   seo: {
     metaTitle:
-      "TikTok Series Analytics: Measure Episodes, Retention, Revenue | ReelPulse",
+      "TikTok Series Analytics: Measure Episodes, Retention, Revenue | Reelytics",
     metaDescription:
       "Track TikTok series performance with episode-level analytics. Learn retention measurement, revenue attribution, and how to build a TikTok analytics workflow.",
     keywords: [
@@ -238,8 +238,8 @@ export const article = {
     {
       type: "cta",
       heading: "Track TikTok Revenue Alongside Every Other Metric",
-      text: "ReelPulse pulls your TikTok series data automatically and maps revenue, retention, and engagement to every episode. See your complete picture in one dashboard.",
-      buttonText: "Connect TikTok to ReelPulse",
+      text: "Reelytics pulls your TikTok series data automatically and maps revenue, retention, and engagement to every episode. See your complete picture in one dashboard.",
+      buttonText: "Connect TikTok to Reelytics",
       buttonHref: "/login",
     },
     {
@@ -273,7 +273,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Once a week, update your episode tracking spreadsheet or check your ReelPulse dashboard with 7-day data for recent episodes. Calculate the episode retention ratio for each new episode pair. Update your series retention curve to see how the full series is performing. Flag any episodes where retention dropped more than 10 points from the previous episode for content review.",
+        "Once a week, update your episode tracking spreadsheet or check your Reelytics dashboard with 7-day data for recent episodes. Calculate the episode retention ratio for each new episode pair. Update your series retention curve to see how the full series is performing. Flag any episodes where retention dropped more than 10 points from the previous episode for content review.",
     },
     {
       type: "heading",
@@ -311,7 +311,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "This is where a unified analytics platform becomes essential. ReelPulse normalizes data across TikTok, YouTube, and ReelShort so you can compare like with like. You can see that your series has 68% Episode 1-to-2 retention on TikTok but only 54% on YouTube, which might indicate that your content style resonates more with TikTok's audience. You can see that a specific episode drove 3x more paywall conversions on ReelShort than the average, which tells you something about that episode's content that you can replicate.",
+        "This is where a unified analytics platform becomes essential. Reelytics normalizes data across TikTok, YouTube, and ReelShort so you can compare like with like. You can see that your series has 68% Episode 1-to-2 retention on TikTok but only 54% on YouTube, which might indicate that your content style resonates more with TikTok's audience. You can see that a specific episode drove 3x more paywall conversions on ReelShort than the average, which tells you something about that episode's content that you can replicate.",
     },
     {
       type: "callout",
@@ -333,8 +333,8 @@ export const article = {
     {
       type: "cta",
       heading: "Get the Full Picture of Your TikTok Series",
-      text: "Stop guessing how your series performs and start measuring it. ReelPulse gives TikTok series creators episode-level retention, binge analytics, and revenue tracking in one place.",
-      buttonText: "Start Free with ReelPulse",
+      text: "Stop guessing how your series performs and start measuring it. Reelytics gives TikTok series creators episode-level retention, binge analytics, and revenue tracking in one place.",
+      buttonText: "Start Free with Reelytics",
       buttonHref: "/login",
     },
     {

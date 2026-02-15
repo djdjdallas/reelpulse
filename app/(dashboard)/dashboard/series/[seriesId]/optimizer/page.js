@@ -5,7 +5,7 @@ import { hasFeature } from "@/lib/utils/featureGating";
 import { UpgradeBanner } from "@/components/dashboard/UpgradeBanner";
 
 export const metadata = {
-  title: "Paywall Optimizer — ReelPulse",
+  title: "Paywall Optimizer — Reelytics",
 };
 
 export default async function OptimizerPage({ params }) {

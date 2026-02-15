@@ -117,7 +117,7 @@ export function Sidebar({ user }) {
           <Menu className="h-5 w-5" />
         </Button>
         <BarChart3 className="h-5 w-5 text-primary" />
-        <span className="text-lg font-bold">ReelPulse</span>
+        <span className="text-lg font-bold">Reelytics</span>
       </div>
 
       {/* Mobile sheet sidebar */}
@@ -126,7 +126,7 @@ export function Sidebar({ user }) {
           <SheetTitle className="sr-only">Navigation</SheetTitle>
           <div className="flex h-14 items-center gap-2 px-4">
             <BarChart3 className="h-6 w-6 text-primary" />
-            <span className="text-lg font-bold">ReelPulse</span>
+            <span className="text-lg font-bold">Reelytics</span>
           </div>
           <Separator />
           <div className="flex flex-1 flex-col overflow-y-auto" style={{ height: "calc(100vh - 3.5rem - 1px)" }}>
@@ -143,7 +143,7 @@ export function Sidebar({ user }) {
       <aside className="fixed left-0 top-0 z-30 hidden h-screen w-60 flex-col border-r border-border bg-sidebar md:flex">
         <div className="flex h-14 items-center gap-2 px-4">
           <BarChart3 className="h-6 w-6 text-primary" />
-          <span className="text-lg font-bold">ReelPulse</span>
+          <span className="text-lg font-bold">Reelytics</span>
         </div>
 
         <Separator />

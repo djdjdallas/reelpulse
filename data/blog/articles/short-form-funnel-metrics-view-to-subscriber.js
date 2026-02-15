@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-23",
   updatedAt: "2026-01-23",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "fundamentals",
@@ -241,7 +241,7 @@ export const article = {
     {
       type: "cta",
       heading: "Visualize Your Complete Funnel",
-      text: "ReelPulse maps your entire viewer funnel from discovery through retention, showing conversion rates at every stage and highlighting your biggest bottleneck. Stop guessing where to focus and start optimizing with data.",
+      text: "Reelytics maps your entire viewer funnel from discovery through retention, showing conversion rates at every stage and highlighting your biggest bottleneck. Stop guessing where to focus and start optimizing with data.",
       buttonText: "See Your Funnel Data",
       buttonHref: "/login",
     },
@@ -280,13 +280,13 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Using ReelPulse to Visualize and Optimize Your Funnel",
-      id: "using-reelpulse-visualize-funnel",
+      text: "Using Reelytics to Visualize and Optimize Your Funnel",
+      id: "using-reelytics-visualize-funnel",
     },
     {
       type: "paragraph",
       content:
-        "Building and monitoring a complete funnel requires data from multiple sources, calculated at multiple levels, and presented in a way that makes bottlenecks immediately visible. This is a core strength of ReelPulse.",
+        "Building and monitoring a complete funnel requires data from multiple sources, calculated at multiple levels, and presented in a way that makes bottlenecks immediately visible. This is a core strength of Reelytics.",
     },
     {
       type: "list",
@@ -303,7 +303,7 @@ export const article = {
       type: "blockquote",
       content:
         "Do not try to optimize every stage of the funnel at once. Find your weakest link, fix it, then move to the next. This sequential approach compounds faster than spreading effort across the entire funnel.",
-      attribution: "ReelPulse Analytics Team",
+      attribution: "Reelytics Analytics Team",
     },
     {
       type: "heading",
@@ -319,12 +319,12 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "Start by mapping your funnel with whatever data you have today. Even rough estimates are better than no funnel awareness at all. Then, as you gather more precise data through tools like ReelPulse, refine your numbers and let them guide your content and monetization strategy. The creators who understand their funnel deeply and optimize it systematically are the ones building sustainable, growing businesses in short-form content.",
+        "Start by mapping your funnel with whatever data you have today. Even rough estimates are better than no funnel awareness at all. Then, as you gather more precise data through tools like Reelytics, refine your numbers and let them guide your content and monetization strategy. The creators who understand their funnel deeply and optimize it systematically are the ones building sustainable, growing businesses in short-form content.",
     },
     {
       type: "cta",
       heading: "Map Your Viewer Funnel Today",
-      text: "ReelPulse gives you the complete picture of your viewer journey, from first impression to loyal subscriber. See where viewers convert, where they drop off, and where your biggest revenue opportunities are hiding.",
+      text: "Reelytics gives you the complete picture of your viewer journey, from first impression to loyal subscriber. See where viewers convert, where they drop off, and where your biggest revenue opportunities are hiding.",
       buttonText: "Get Started Free",
       buttonHref: "/login",
     },

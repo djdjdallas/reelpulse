@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-01-21",
   updatedAt: "2026-01-21",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "tools-comparison",
@@ -17,7 +17,7 @@ export const article = {
     metaTitle:
       "Best TikTok Analytics Alternatives for Serious Creators (2026)",
     metaDescription:
-      "Compare top TikTok analytics alternatives including Pentos, Analisa, Exolyt, and ReelPulse. Find the right tool for series tracking, audience insights, and revenue attribution.",
+      "Compare top TikTok analytics alternatives including Pentos, Analisa, Exolyt, and Reelytics. Find the right tool for series tracking, audience insights, and revenue attribution.",
     keywords: [
       "TikTok analytics alternatives",
       "TikTok analytics tools",
@@ -157,7 +157,7 @@ export const article = {
           "Brand social media management",
         ],
         [
-          "ReelPulse",
+          "Reelytics",
           "Full series + episode",
           "TikTok, YouTube, ReelShort",
           "Yes",
@@ -224,30 +224,30 @@ export const article = {
     {
       type: "cta",
       heading: "Built for Series Creators, Not Just Video Creators",
-      text: "ReelPulse is the only analytics platform designed from the ground up for serialized short-form content. Group episodes into series, track cross-episode retention, and see exactly where your audience converts.",
-      buttonText: "Try ReelPulse Free",
+      text: "Reelytics is the only analytics platform designed from the ground up for serialized short-form content. Group episodes into series, track cross-episode retention, and see exactly where your audience converts.",
+      buttonText: "Try Reelytics Free",
       buttonHref: "/login",
     },
     {
       type: "heading",
       level: 2,
-      text: "How ReelPulse Approaches TikTok Analytics Differently",
-      id: "reelpulse-approach",
+      text: "How Reelytics Approaches TikTok Analytics Differently",
+      id: "reelytics-approach",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse was built specifically for the serialized short-form content model. Instead of treating each TikTok video as an island, the platform organizes your content into series from the moment you connect your account. This means every metric, from views and engagement to retention and revenue, can be analyzed at the episode level, the series level, or across your entire catalog.",
+        "Reelytics was built specifically for the serialized short-form content model. Instead of treating each TikTok video as an island, the platform organizes your content into series from the moment you connect your account. This means every metric, from views and engagement to retention and revenue, can be analyzed at the episode level, the series level, or across your entire catalog.",
     },
     {
       type: "list",
       style: "unordered",
       items: [
-        "Automatic series detection: ReelPulse uses naming patterns and metadata to automatically group your TikTok videos into series. You can also manually organize episodes and adjust groupings as needed.",
+        "Automatic series detection: Reelytics uses naming patterns and metadata to automatically group your TikTok videos into series. You can also manually organize episodes and adjust groupings as needed.",
         "Episode-over-episode retention funnels: See exactly what percentage of Episode 1 viewers watched Episode 2, what percentage of those watched Episode 3, and so on. Identify the exact episode where your series loses momentum.",
-        "Paywall impact analysis: If you use paywalled episodes on TikTok or redirect viewers to platforms like ReelShort, ReelPulse tracks conversion rates and revenue attribution at the episode level.",
+        "Paywall impact analysis: If you use paywalled episodes on TikTok or redirect viewers to platforms like ReelShort, Reelytics tracks conversion rates and revenue attribution at the episode level.",
         "Cross-platform series views: Track the same series across TikTok, YouTube Shorts, and ReelShort in a single dashboard. See which platform drives the most engaged viewers and the highest revenue per viewer.",
-        "Smart recommendations: Based on your series performance data, ReelPulse suggests optimal episode lengths, posting schedules, and paywall placement strategies specific to your audience.",
+        "Smart recommendations: Based on your series performance data, Reelytics suggests optimal episode lengths, posting schedules, and paywall placement strategies specific to your audience.",
       ],
     },
     {
@@ -308,7 +308,7 @@ export const article = {
     {
       type: "paragraph",
       content:
-        "The choice ultimately depends on your content model. For standalone viral content, a general TikTok analytics tool may serve you well. For series-based content strategies where retention, progression, and paywall optimization drive revenue, a series-native platform like ReelPulse gives you the analytical depth that no general tool can match.",
+        "The choice ultimately depends on your content model. For standalone viral content, a general TikTok analytics tool may serve you well. For series-based content strategies where retention, progression, and paywall optimization drive revenue, a series-native platform like Reelytics gives you the analytical depth that no general tool can match.",
     },
     {
       type: "cta",

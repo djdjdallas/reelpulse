@@ -6,7 +6,7 @@ export const article = {
   publishedAt: "2026-02-02",
   updatedAt: "2026-02-02",
   author: {
-    name: "ReelPulse Team",
+    name: "Reelytics Team",
     role: "Content Team",
   },
   category: "fundamentals",
@@ -20,7 +20,7 @@ export const article = {
   featured: false,
   seo: {
     metaTitle:
-      "What Is a Good Retention Rate for Short-Form Video Series? | ReelPulse",
+      "What Is a Good Retention Rate for Short-Form Video Series? | Reelytics",
     metaDescription:
       "2026 benchmarks for short-form video series retention rates. Covers TikTok, YouTube Shorts, and ReelShort with actionable strategies to improve retention.",
     keywords: [
@@ -312,7 +312,7 @@ export const article = {
     {
       type: "cta",
       heading: "Measure Retention the Right Way",
-      text: "ReelPulse calculates episode-to-episode retention automatically across TikTok, YouTube Shorts, and ReelShort. See both absolute and relative retention curves, segmented by cohort and traffic source.",
+      text: "Reelytics calculates episode-to-episode retention automatically across TikTok, YouTube Shorts, and ReelShort. See both absolute and relative retention curves, segmented by cohort and traffic source.",
       buttonText: "See Your Retention Data",
       buttonHref: "/login",
     },
@@ -391,23 +391,23 @@ export const article = {
     {
       type: "heading",
       level: 2,
-      text: "Using ReelPulse to Track Retention Trends",
-      id: "reelpulse-retention-tracking",
+      text: "Using Reelytics to Track Retention Trends",
+      id: "reelytics-retention-tracking",
     },
     {
       type: "paragraph",
       content:
-        "ReelPulse provides several features specifically designed for retention tracking and improvement. The Retention Curve view shows your absolute and relative retention for every series, letting you spot drop-off points at a glance. The Episode Comparison view lets you see how different episodes compare on in-video retention, so you can identify which hook and pacing styles work best. The Trend view shows how your retention metrics are changing over time across your last several series, so you can see whether your creative improvements are translating to measurable results.",
+        "Reelytics provides several features specifically designed for retention tracking and improvement. The Retention Curve view shows your absolute and relative retention for every series, letting you spot drop-off points at a glance. The Episode Comparison view lets you see how different episodes compare on in-video retention, so you can identify which hook and pacing styles work best. The Trend view shows how your retention metrics are changing over time across your last several series, so you can see whether your creative improvements are translating to measurable results.",
     },
     {
       type: "paragraph",
       content:
-        "Most importantly, ReelPulse tracks retention across platforms. If you publish the same series on TikTok and ReelShort, you can see how each platform's audience retains differently. This helps you tailor your content strategy to each platform rather than assuming one-size-fits-all. Creators using ReelPulse for cross-platform retention tracking often discover that specific episodes that underperform on one platform overperform on another, providing insights into each platform's audience preferences.",
+        "Most importantly, Reelytics tracks retention across platforms. If you publish the same series on TikTok and ReelShort, you can see how each platform's audience retains differently. This helps you tailor your content strategy to each platform rather than assuming one-size-fits-all. Creators using Reelytics for cross-platform retention tracking often discover that specific episodes that underperform on one platform overperform on another, providing insights into each platform's audience preferences.",
     },
     {
       type: "cta",
       heading: "Know Your Retention Numbers",
-      text: "Stop guessing whether your retention is good enough. ReelPulse gives you platform-specific benchmarks, episode-level retention curves, and trend tracking so you can measure, compare, and improve with confidence.",
+      text: "Stop guessing whether your retention is good enough. Reelytics gives you platform-specific benchmarks, episode-level retention curves, and trend tracking so you can measure, compare, and improve with confidence.",
       buttonText: "Track Your Retention Free",
       buttonHref: "/login",
     },
