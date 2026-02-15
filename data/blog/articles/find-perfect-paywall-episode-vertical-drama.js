@@ -32,7 +32,7 @@ export const article = {
   relatedSlugs: [
     "paywall-optimization-short-form-creators",
     "ab-tests-paywall-placement-video-series",
-    "track-revenue-by-episode-reelshort-tiktok",
+    "data-driven-paywall-placement-romance-series",
   ],
   sections: [
     {

@@ -31,7 +31,7 @@ export const article = {
   relatedSlugs: [
     "analytics-stack-short-form-content-studios-2026",
     "alternatives-tiktok-analytics-serious-creators",
-    "youtube-studio-vs-dedicated-shorts-analytics",
+    "best-analytics-tools-multi-platform-micro-drama",
   ],
   sections: [
     {

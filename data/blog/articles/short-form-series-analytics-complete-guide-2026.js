@@ -33,7 +33,7 @@ export const article = {
   relatedSlugs: [
     "good-retention-rate-short-form-video-series",
     "measure-binge-rate-episode-drop-off",
-    "short-form-funnel-metrics-view-to-subscriber",
+    "revenue-per-episode-north-star-metric-short-form-studios",
   ],
   sections: [
     {

@@ -31,7 +31,7 @@ export const article = {
   },
   relatedSlugs: [
     "good-retention-rate-short-form-video-series",
-    "episode-level-analytics-missing-metric",
+    "zombie-episodes-kill-series-binge-rate",
     "short-form-series-analytics-complete-guide-2026",
   ],
   sections: [

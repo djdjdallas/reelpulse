@@ -29,6 +29,24 @@ export const categories = {
     color: "red",
     description: "Deep-dive analytics techniques for data-driven content studios",
   },
+  "genre-analytics": {
+    key: "genre-analytics",
+    label: "Genre Analytics",
+    color: "teal",
+    description: "Genre-specific data insights for romance, thriller, supernatural, and more",
+  },
+  "studio-operations": {
+    key: "studio-operations",
+    label: "Studio Operations",
+    color: "pink",
+    description: "Operational playbooks and reporting frameworks for content studios",
+  },
+  "platform-guides": {
+    key: "platform-guides",
+    label: "Platform Guides",
+    color: "cyan",
+    description: "Platform-specific guides for DramaBox, ReelShort, ShortTV, and more",
+  },
 };
 
 export const categoryColors = {
@@ -37,6 +55,9 @@ export const categoryColors = {
   green: "bg-green-500/10 text-green-400 border-green-500/20",
   amber: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   red: "bg-red-500/10 text-red-400 border-red-500/20",
+  teal: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+  pink: "bg-pink-500/10 text-pink-400 border-pink-500/20",
+  cyan: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
 };
 
 export function getCategoryStyle(categoryKey) {

@@ -29,7 +29,7 @@ export const article = {
   },
   relatedSlugs: [
     "find-perfect-paywall-episode-vertical-drama",
-    "track-revenue-by-episode-reelshort-tiktok",
+    "dramabox-analytics-studios-need-to-track",
     "paywall-optimization-short-form-creators",
   ],
   sections: [

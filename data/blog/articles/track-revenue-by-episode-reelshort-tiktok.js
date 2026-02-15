@@ -39,7 +39,7 @@ export const article = {
   relatedSlugs: [
     "find-perfect-paywall-episode-vertical-drama",
     "paywall-optimization-short-form-creators",
-    "ab-tests-paywall-placement-video-series",
+    "revenue-per-episode-north-star-metric-short-form-studios",
   ],
   sections: [
     {

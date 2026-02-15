@@ -32,7 +32,7 @@ export const article = {
   relatedSlugs: [
     "tiktok-series-analytics-measure-episodes-retention-revenue",
     "creator-economy-analytics-tools-compared",
-    "analytics-stack-short-form-content-studios-2026",
+    "why-exolyt-pentos-not-built-episodic-creators",
   ],
   sections: [
     {

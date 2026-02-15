@@ -33,7 +33,7 @@ export const article = {
   relatedSlugs: [
     "studios-standardize-reporting-across-platforms",
     "analytics-stack-short-form-content-studios-2026",
-    "cohort-retention-paywalled-short-form-series",
+    "analytics-playbook-micro-drama-studios-weekly-rituals",
   ],
   sections: [
     {
