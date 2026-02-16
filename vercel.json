@@ -1,0 +1,6 @@
+{
+  "crons": [
+    { "path": "/api/cron/sync-metrics", "schedule": "0 */6 * * *" },
+    { "path": "/api/cron/evaluate-alerts", "schedule": "0 8 * * *" }
+  ]
+}

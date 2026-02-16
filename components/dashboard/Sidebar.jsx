@@ -5,12 +5,21 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
   BarChart3,
+  Bell,
   Film,
+  FlaskConical,
   LayoutDashboard,
+  Link2,
+  Plug,
   Settings,
   CreditCard,
   LogOut,
   Menu,
+  FileBarChart,
+  Users,
+  PieChart,
+  Grid3X3,
+  Shield,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -22,17 +31,48 @@ import {
 import { createClient } from "@/lib/supabase/client";
 import posthog from "posthog-js";
 
-const navItems = [
-  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/dashboard/series", label: "All Series", icon: Film },
-];
+function getNavItems(plan) {
+  const items = [
+    { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+    { href: "/dashboard/series", label: "All Series", icon: Film },
+  ];
+
+  if (plan === "pro" || plan === "studio") {
+    items.push({ href: "/dashboard/integrations", label: "Integrations", icon: Plug });
+    items.push({ href: "/dashboard/reports", label: "Reports", icon: FileBarChart });
+    items.push({ href: "/dashboard/segments", label: "Segments", icon: PieChart });
+  }
+
+  if (plan === "studio") {
+    items.push({ href: "/dashboard/experiments", label: "Experiments", icon: FlaskConical });
+    items.push({ href: "/dashboard/custom", label: "Custom Dashboard", icon: Grid3X3 });
+  }
+
+  return items;
+}
 
 const bottomItems = [
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
   { href: "/dashboard/settings/billing", label: "Billing", icon: CreditCard },
 ];
 
-function SidebarContent({ pathname, onNavigate, onSignOut }) {
+function getBottomItems(plan) {
+  const items = [];
+  if (plan === "studio") {
+    items.push({ href: "/dashboard/settings/team", label: "Team", icon: Users });
+  }
+  items.push(...bottomItems);
+  return items;
+}
+
+function SidebarContent({ pathname, plan, role, onNavigate, onSignOut }) {
+  const navItems = getNavItems(plan);
+  const bottom = getBottomItems(plan);
+
+  if (role === "owner") {
+    bottom.unshift({ href: "/dashboard/admin", label: "Admin", icon: Shield });
+  }
+
   return (
     <>
       <nav className="flex-1 space-y-1 px-2 py-4">
@@ -60,7 +100,7 @@ function SidebarContent({ pathname, onNavigate, onSignOut }) {
 
       <div className="space-y-1 px-2 pb-4">
         <Separator className="mb-4" />
-        {bottomItems.map((item) => {
+        {bottom.map((item) => {
           const isActive = pathname.startsWith(item.href);
           return (
             <Link
@@ -91,7 +131,7 @@ function SidebarContent({ pathname, onNavigate, onSignOut }) {
   );
 }
 
-export function Sidebar({ user }) {
+export function Sidebar({ user, plan = "free", role }) {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -132,6 +172,8 @@ export function Sidebar({ user }) {
           <div className="flex flex-1 flex-col overflow-y-auto" style={{ height: "calc(100vh - 3.5rem - 1px)" }}>
             <SidebarContent
               pathname={pathname}
+              plan={plan}
+              role={role}
               onNavigate={() => setMobileOpen(false)}
               onSignOut={handleSignOut}
             />
@@ -150,6 +192,8 @@ export function Sidebar({ user }) {
 
         <SidebarContent
           pathname={pathname}
+          plan={plan}
+          role={role}
           onNavigate={undefined}
           onSignOut={handleSignOut}
         />

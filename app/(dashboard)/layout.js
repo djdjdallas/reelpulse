@@ -23,6 +23,7 @@ export default async function DashboardLayout({ children }) {
     .single();
 
   const workspace = membership?.workspaces ?? null;
+  const plan = workspace?.plan ?? "free";
 
   return (
     <TooltipProvider>
@@ -30,10 +31,10 @@ export default async function DashboardLayout({ children }) {
         userId={user.id}
         email={user.email}
         name={user.user_metadata?.full_name}
-        plan={workspace?.plan}
+        plan={plan}
       />
       <div className="flex min-h-screen">
-        <Sidebar user={user} />
+        <Sidebar user={user} plan={plan} role={membership?.role} />
         <main className="flex-1 overflow-y-auto pt-14 md:ml-60 md:pt-0">
           <div className="mx-auto max-w-7xl p-6">{children}</div>
         </main>

@@ -6,7 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { EpisodeManager } from "@/components/forms/EpisodeManager";
 import Link from "next/link";
 
-export function SeriesDetailTabs({ series, episodes, seriesId }) {
+export function SeriesDetailTabs({ series, episodes, seriesId, plan }) {
+  const hasCrossPlatform = plan === "pro" || plan === "studio";
+  const hasCohorts = plan === "pro" || plan === "studio";
+
   return (
     <Tabs defaultValue="overview">
       <TabsList>
@@ -20,6 +23,20 @@ export function SeriesDetailTabs({ series, episodes, seriesId }) {
             Optimizer
           </Link>
         </TabsTrigger>
+        {hasCrossPlatform && (
+          <TabsTrigger value="cross-platform">
+            <Link href={`/dashboard/series/${seriesId}/cross-platform`}>
+              Cross-Platform
+            </Link>
+          </TabsTrigger>
+        )}
+        {hasCohorts && (
+          <TabsTrigger value="cohorts">
+            <Link href={`/dashboard/series/${seriesId}/cohorts`}>
+              Cohorts
+            </Link>
+          </TabsTrigger>
+        )}
         <TabsTrigger value="settings">
           <Link href={`/dashboard/series/${seriesId}/settings`}>Settings</Link>
         </TabsTrigger>
