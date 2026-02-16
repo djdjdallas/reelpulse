@@ -64,7 +64,7 @@ export function LoginForm() {
           required
         />
       </div>
-      <Button type="submit" className="w-full" disabled={loading}>
+      <Button type="submit" variant="outline" className="w-full" disabled={loading}>
         {loading ? "Sending link..." : "Send Magic Link"}
       </Button>
     </form>

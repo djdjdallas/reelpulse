@@ -24,7 +24,7 @@ export default function LoginPage() {
           Sign in to access your analytics dashboard
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-6">
         <OAuthButton />
         <div className="relative">
           <Separator />
