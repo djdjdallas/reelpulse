@@ -8,6 +8,7 @@ import {
 const POSTHOG_HOST = "https://us.i.posthog.com";
 const POSTHOG_PROJECT_ID = "314104";
 
+const ADMIN_EMAIL = "dominickjerell@gmail.com";
 const VALID_PERIODS = new Set([1, 3, 7, 30]);
 
 async function runHogQL(query, apiKey) {
@@ -54,14 +55,8 @@ export async function POST(request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    // Check owner role
-    const { data: membership } = await supabase
-      .from("workspace_members")
-      .select("role")
-      .eq("user_id", user.id)
-      .single();
-
-    if (!membership || membership.role !== "owner") {
+    // Check admin email
+    if (user.email !== ADMIN_EMAIL) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 

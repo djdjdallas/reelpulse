@@ -65,11 +65,13 @@ function getBottomItems(plan) {
   return items;
 }
 
-function SidebarContent({ pathname, plan, role, onNavigate, onSignOut }) {
+const ADMIN_EMAIL = "dominickjerell@gmail.com";
+
+function SidebarContent({ pathname, plan, email, onNavigate, onSignOut }) {
   const navItems = getNavItems(plan);
   const bottom = getBottomItems(plan);
 
-  if (role === "owner") {
+  if (email === ADMIN_EMAIL) {
     bottom.unshift({ href: "/dashboard/admin", label: "Admin", icon: Shield });
   }
 
@@ -131,7 +133,7 @@ function SidebarContent({ pathname, plan, role, onNavigate, onSignOut }) {
   );
 }
 
-export function Sidebar({ user, plan = "free", role }) {
+export function Sidebar({ user, plan = "free" }) {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -173,7 +175,7 @@ export function Sidebar({ user, plan = "free", role }) {
             <SidebarContent
               pathname={pathname}
               plan={plan}
-              role={role}
+              email={user?.email}
               onNavigate={() => setMobileOpen(false)}
               onSignOut={handleSignOut}
             />
@@ -193,7 +195,7 @@ export function Sidebar({ user, plan = "free", role }) {
         <SidebarContent
           pathname={pathname}
           plan={plan}
-          role={role}
+          email={user?.email}
           onNavigate={undefined}
           onSignOut={handleSignOut}
         />

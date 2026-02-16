@@ -2,6 +2,8 @@ import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 
+const ADMIN_EMAIL = "dominickjerell@gmail.com";
+
 export const metadata = {
   title: "Admin — Reelytics",
 };
@@ -17,13 +19,7 @@ export default async function AdminPage() {
     redirect("/login");
   }
 
-  const { data: membership } = await supabase
-    .from("workspace_members")
-    .select("role")
-    .eq("user_id", user.id)
-    .single();
-
-  if (!membership || membership.role !== "owner") {
+  if (user.email !== ADMIN_EMAIL) {
     notFound();
   }
 
