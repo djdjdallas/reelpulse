@@ -61,14 +61,15 @@ export function OnboardingWizard() {
       data: { user },
     } = await supabase.auth.getUser();
 
-    const { data: membership } = await supabase
+    const { data: membership, error: memberError } = await supabase
       .from("workspace_members")
       .select("workspace_id")
       .eq("user_id", user.id)
       .single();
 
     if (!membership) {
-      toast.error("No workspace found");
+      console.error("workspace_members query failed:", memberError);
+      toast.error("No workspace found. Please refresh the page and try again.");
       setLoading(false);
       return;
     }
