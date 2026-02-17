@@ -19,7 +19,6 @@ import {
   Users,
   PieChart,
   Grid3X3,
-  Shield,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -65,15 +64,9 @@ function getBottomItems(plan) {
   return items;
 }
 
-const ADMIN_EMAIL = "dominickjerell@gmail.com";
-
 function SidebarContent({ pathname, plan, email, onNavigate, onSignOut }) {
   const navItems = getNavItems(plan);
   const bottom = getBottomItems(plan);
-
-  if (email === ADMIN_EMAIL) {
-    bottom.unshift({ href: "/dashboard/admin", label: "Admin", icon: Shield });
-  }
 
   return (
     <>
